@@ -1,7 +1,7 @@
 export const Hero = () => {
   return (
     <section>
-      <h1>Heloooooooo</h1>
+      <h1></h1>
     </section>
   );
 };
