@@ -9,7 +9,7 @@ const __dirname = import.meta.dirname;
 export default defineConfig({
   resolve: {
     alias: {
-      "@components": path.resolve(__dirname, "./src//components"),
+      "@components": path.resolve(__dirname, "./src/components"),
       "@sections": path.resolve(__dirname, "./src/sections"),
       "@layout": path.resolve(__dirname, "./src/layout"),
     },

@@ -15,32 +15,34 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
-      <nav className="container mx-auto px-6 flex items-center justify-between">
+      <nav className="container mx-auto px-6 flex justify-between">
         <a
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          DTO<span className="text-primary">.</span>
+          {`<Troy />`}
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
-          <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
+          <ol className="glass rounded-full flex items-center gap-1">
             {navLinks.map((link, index) => (
-              <a
-                href={link.href}
-                key={index}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
-              >
-                {link.label}
-              </a>
+              <li className="list-[decimal-leading-zero] list-inside px-3 py-2 text-md">
+                <a
+                  href={link.href}
+                  key={index}
+                  className="text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                >
+                  {link.label}
+                </a>
+              </li>
             ))}
-          </div>
-        </div>
+          </ol>
 
-        {/* CV Button */}
-        <div className="hidden md:block">
-          <Button size="sm">Download CV</Button>
+          {/* CV Button */}
+          <div className="hidden md:block">
+            <Button size="sm">Download CV</Button>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
