@@ -1,6 +1,20 @@
+const expData = [
+  "Developed custom Drupal themes with priority to responsiveness and accessibility; enhancing user engagement.",
+  "Standardised code practices; created reusable code boosting eﬃciency and minimised cost.",
+  "tandardised code practices; created reusable code boosting eﬃciency and minimised cost.",
+  "Standardised code practices; created reusable code boosting eﬃciency and minimised cost.",
+  "Extended site functionality via integration of contributed modules, external JS libraries and third-party APIs.",
+  "Developed custom features via JavaScript and custom modules to meet client-speciﬁc demands.",
+  "Debugged code issues improving project stability.",
+  "Conducted several CMS upgrades from D8 to D11, maintaining and extending project lifecycles.",
+  "Conducted project migrations between WordPress to Drupal with clients that have existing projects.",
+  "Fulﬁlled accessibility testing in compliance with W3C standards (WCAG 2.2).",
+  "Led pre-project analysis and technical assessments on a number of projects taking full accountability.",
+];
+
 export const Experience = () => {
   return (
-    <section className="about-content relative w-1/2 m-auto px-4 py-4 mt-48">
+    <section className="about-content container relative lg:w-4/5 2xl:w-1/2 m-auto px-4 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}
@@ -21,54 +35,10 @@ export const Experience = () => {
         </h3>
         <p>October 2020 - April 2025</p>
 
-        <ul className="list-disc mt-6">
-          <li>
-            Developed custom{" "}
-            <a href="https://new.drupal.org/home" target="_blank">
-              Drupal
-            </a>{" "}
-            themes with priority to responsiveness and accessibility; enhancing
-            user engagement.
-          </li>
-          <li>
-            Standardised code practices; created reusable code boosting eﬃciency
-            and minimised cost.
-          </li>
-          <li>
-            Extended site functionality via integration of contributed modules,
-            external JS libraries and third-party APIs.
-          </li>
-          <li>
-            Developed custom features via JavaScript and custom modules to meet
-            client-speciﬁc demands.
-          </li>
-          <li>Debugged code issues improving project stability.</li>
-          <li>
-            Conducted several CMS upgrades from D8 to D11, maintaining and
-            extending project lifecycles.
-          </li>
-          <li>
-            Conducted project migrations between{" "}
-            <a href="https://wordpress.com/" target="_blank">
-              WordPress
-            </a>{" "}
-            to Drupal with clients that have existing projects.
-          </li>
-          <li>
-            Fulﬁlled accessibility testing in compliance with{" "}
-            <a href="https://www.w3.org/mission/">W3C</a> standards (
-            <a
-              href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/understanding-wcag"
-              target="_blank"
-            >
-              WCAG 2.2
-            </a>
-            ).
-          </li>
-          <li>
-            Led pre-project analysis and technical assessments on a number of
-            projects taking full accountability.
-          </li>
+        <ul className="mt-6 list-custom p-5">
+          {expData.map((data) => (
+            <li className="relative leading-loose">{data}</li>
+          ))}
         </ul>
       </div>
     </section>

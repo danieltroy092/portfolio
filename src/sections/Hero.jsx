@@ -28,14 +28,14 @@ export const Hero = () => {
       </div>
 
       {/** Content */}
-      <div className="hero-content relative w-1/2 m-auto px-4 py-4">
+      <div className="hero-content relative container m-auto px-6 py-6 2xl:w-1/2">
         <h1 className="text-primary text-xl font-mono">Hi, my name is</h1>
-        <h2 className="text-6xl mt-6 font-semibold">Troy Ong</h2>
+        <h2 className="text-6xl mt-6 font-semibold">Daniel Troy Ong</h2>
         <p className="text-6xl mt-6 font-semibold">
-          I build things for the web.
+          I build things for the web
         </p>
 
-        <div className="mt-6 w-3/5">
+        <div className="mt-6 lg:w-3/5">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

@@ -27,6 +27,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding: 100px;
   }
 
   body {
@@ -62,6 +63,14 @@
     box-shadow:
       0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent),
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
+  }
+
+  .list-custom li::before {
+    position: absolute;
+    content: "▶";
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    left: -20px;
   }
 }
 

@@ -31,7 +31,7 @@ const projectsData = [
 
 export const Projects = () => {
   return (
-    <section className="skills-content relative w-2/5 m-auto px-4 py-4 mt-48">
+    <section className="skills-content relative container md:w-4/5 2xl:w-2/5 m-auto px-6 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}
@@ -44,16 +44,16 @@ export const Projects = () => {
         {projectsData.map((project) => (
           <li className="project-item mt-12" key={project.id}>
             <article
-              className={`project-teaser flex gap-5 ${project.id % 2 == 0 ? "flex-row-reverse" : ""}`}
+              className={`project-teaser sm:flex gap-5 ${project.id % 2 == 0 ? "flex-row-reverse" : ""}`}
             >
-              <a className="block w-1/2" href={project.url} target="_blank">
+              <a className="block sm:w-1/2" href={project.url} target="_blank">
                 <img
                   className="project-image"
                   src={project.image}
                   alt={project.name}
                 />
               </a>
-              <div className="project-content w-1/2">
+              <div className="project-content mt-5 sm:w-1/2 sm:mt-0">
                 <span class="font-mono text-primary text-xs">
                   Featured Project
                 </span>

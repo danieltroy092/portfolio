@@ -24,7 +24,7 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
           <ol className="glass rounded-full flex items-center gap-1">
             {navLinks.map((link, index) => (
               <li className="list-[decimal-leading-zero] list-inside px-3 py-2 text-md">
@@ -40,14 +40,14 @@ export const Navbar = () => {
           </ol>
 
           {/* CV Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button size="sm">Download CV</Button>
           </div>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-foreground cursor-pointer"
+          className="lg:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,7 +57,7 @@ export const Navbar = () => {
       {/* Mobile Menu */}
 
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-strong animate-fade-in">
+        <div className="lg:hidden glass-strong animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a

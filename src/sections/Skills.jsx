@@ -90,7 +90,7 @@ const tools = SkillsData.filter(
 
 export const Skills = () => {
   return (
-    <section className="skills-content relative w-2/5 m-auto px-4 py-4 mt-48">
+    <section className="skills-content relative container md:w-4/5 2xl:w-2/5 m-auto px-6 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}
@@ -101,10 +101,10 @@ export const Skills = () => {
 
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">FRONTEND</h3>
-        <ul className="skill-list flex flex-wrap mt-4 gap-6">
+        <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {frontend.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 grow-0 basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} />
+            <li className="skill-item flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer">
+              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
             </li>
           ))}
         </ul>
@@ -112,10 +112,10 @@ export const Skills = () => {
 
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">BACKEND</h3>
-        <ul className="skill-list flex flex-wrap mt-4 gap-6">
+        <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 grow-0 basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} />
+            <li className="skill-item flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer">
+              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
             </li>
           ))}
         </ul>
@@ -123,10 +123,10 @@ export const Skills = () => {
 
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">TOOLS</h3>
-        <ul className="skill-list flex flex-wrap mt-4 gap-6">
+        <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 grow-0 basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} />
+            <li className="skill-item flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer">
+              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
             </li>
           ))}
         </ul>
