@@ -1,13 +1,15 @@
 export const About = () => {
   return (
-    <section className="about-content relative container 2xl:w-1/2 m-auto px-6 py-4">
-      <h2 class="p-6 text-2xl font-mono text-primary">
+    <section className="profile-content relative container 2xl:w-1/2 m-auto px-6 py-4">
+      <h2 class="py-6 text-2xl font-mono">
         <span>
-          <a id="about">01.</a>
+          <a id="about" className="text-primary">
+            01.
+          </a>
         </span>{" "}
         About Me
       </h2>
-      <div className="test flex flex-col-reverse xl:flex-row gap-5 container">
+      <div className="profile-text flex flex-col-reverse xl:flex-row gap-5 container">
         <div className="xl:w-1/2">
           <p className="mt-8">
             Hello! My name is Brittany and I enjoy creating things that live on
@@ -30,14 +32,8 @@ export const About = () => {
             build a web app with the Spotify API using Node & React.
           </p>
         </div>
-        <div className="xl:w-1/2">
-          <img
-            src="profile-photo.jpg"
-            alt="profile photo"
-            width="350"
-            height="350"
-            className="m-auto"
-          />
+        <div className="profile-image--outer relative xl:w-1/2 overflow-hidden">
+          <span className="profile-image size-full"></span>
         </div>
       </div>
     </section>

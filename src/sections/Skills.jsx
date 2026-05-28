@@ -96,15 +96,25 @@ export const Skills = () => {
           {" "}
           <a id="skills">02.</a>
         </span>{" "}
-        Skills + Tools
+        What's in my toolbox
       </h2>
 
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {frontend.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
+            <li
+              className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer"
+              tabIndex="0"
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="skill-image max-w-[70px]"
+              />
+              <p className="skill-label text-sm" tabIndex="0">
+                {skill.name}
+              </p>
             </li>
           ))}
         </ul>
@@ -114,8 +124,16 @@ export const Skills = () => {
         <h3 className="font-mono text-primary">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
+            <li
+              className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer"
+              tabIndex="0"
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="skill-image max-w-[70px]"
+              />
+              <p className="skill-label text-sm">{skill.name}</p>
             </li>
           ))}
         </ul>
@@ -125,8 +143,16 @@ export const Skills = () => {
         <h3 className="font-mono text-primary">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill) => (
-            <li className="skill-item flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer">
-              <img src={skill.icon} alt={skill.name} className="max-w-[80px]" />
+            <li
+              className="skill-item relative flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer"
+              tabIndex="0"
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="skill-image max-w-[70px]"
+              />
+              <p className="skill-label text-sm">{skill.name}</p>
             </li>
           ))}
         </ul>

@@ -72,6 +72,47 @@
     color: var(--color-primary);
     left: -20px;
   }
+
+  .skill-image {
+    anchor-name: --skill-image;
+
+    &:hover + .skill-label {
+      opacity: 1;
+    }
+  }
+
+  .skill-label {
+    position: absolute;
+    position-anchor: --skill-image;
+    width: max-content;
+    color: black;
+    padding: 2px 4px;
+    border: 2px solid black;
+    background-color: white;
+    top: calc(anchor(top) - 1.4rem);
+    right: calc(anchor(right) - 1.4rem);
+    opacity: 0;
+  }
+
+  .skill-item:focus {
+    outline-color: yellow;
+
+    & > .skill-label {
+      opacity: 1;
+    }
+  }
+
+  .profile-image {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("profile-photo.png");
+    background-color: var(--color-primary);
+    background-blend-mode: luminosity;
+  }
 }
 
 @layer utilities {

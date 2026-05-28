@@ -46,7 +46,12 @@ export const Projects = () => {
             <article
               className={`project-teaser sm:flex gap-5 ${project.id % 2 == 0 ? "flex-row-reverse" : ""}`}
             >
-              <a className="block sm:w-1/2" href={project.url} target="_blank">
+              <a
+                className="block sm:w-1/2"
+                href={project.url}
+                target="_blank"
+                tabIndex={-1}
+              >
                 <img
                   className="project-image"
                   src={project.image}
