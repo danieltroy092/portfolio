@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <section className="profile-content relative container 2xl:w-1/2 m-auto px-6 py-4">
+    <section className="profile-content relative container 2xl:w-3/5 m-auto px-6 py-4">
       <h2 class="py-6 text-2xl font-mono">
         <span>
           <a id="about" className="text-primary">
@@ -9,9 +9,9 @@ export const About = () => {
         </span>{" "}
         About Me
       </h2>
-      <div className="profile-text flex flex-col-reverse xl:flex-row gap-5 container">
+      <div className="profile-text flex flex-col-reverse xl:flex-row gap-12 container">
         <div className="xl:w-1/2">
-          <p className="mt-8">
+          <p>
             Hello! My name is Brittany and I enjoy creating things that live on
             the internet. My interest in web development started back in 2012
             when I decided to try editing custom Tumblr themes — turns out
@@ -32,8 +32,9 @@ export const About = () => {
             build a web app with the Spotify API using Node & React.
           </p>
         </div>
-        <div className="profile-image--outer relative xl:w-1/2 overflow-hidden">
-          <span className="profile-image size-full"></span>
+        <div className="relative xl:w-1/2 ">
+          <span className="profile-image block relative size-full"></span>
+          <span className="profile-image--accent"></span>
         </div>
       </div>
     </section>

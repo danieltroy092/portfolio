@@ -14,7 +14,7 @@ const expData = [
 
 export const Experience = () => {
   return (
-    <section className="about-content container relative lg:w-4/5 2xl:w-1/2 m-auto px-4 py-4 mt-48">
+    <section className="about-content container relative lg:w-4/5 2xl:w-3/5 m-auto px-4 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}

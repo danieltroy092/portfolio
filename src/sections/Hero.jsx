@@ -28,7 +28,7 @@ export const Hero = () => {
       </div>
 
       {/** Content */}
-      <div className="hero-content relative container m-auto px-6 py-6 2xl:w-1/2">
+      <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
         <h1 className="text-primary text-xl font-mono">Hi, my name is</h1>
         <h2 className="text-6xl mt-6 font-semibold">Daniel Troy Ong</h2>
         <p className="text-6xl mt-6 font-semibold">

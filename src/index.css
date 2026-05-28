@@ -19,6 +19,7 @@
   --color-muted-foreground: #7a8491;
 
   --radius: 0.75rem;
+  --radius-small: 0.25rem;
 
   --color-highlight: #f5a623;
   --color-surface: #1a2329;
@@ -103,7 +104,6 @@
   }
 
   .profile-image {
-    display: block;
     max-width: 300px;
     max-height: 300px;
     background-size: cover;
@@ -112,6 +112,37 @@
     background-image: url("profile-photo.png");
     background-color: var(--color-primary);
     background-blend-mode: luminosity;
+    border-radius: var(--radius-small);
+    transition: all 250ms ease;
+
+    &:hover {
+      background-blend-mode: normal;
+      transform: translate(-6px, -6px);
+    }
+  }
+
+  .profile-image--accent {
+    inset: 0;
+    z-index: -2;
+    border: 3px solid var(--color-primary);
+    position: absolute;
+    transform: translate(18px, 18px);
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: var(--radius-small);
+    transition: all 250ms ease;
+  }
+
+  .profile-image:hover + .profile-image--accent {
+    transform: translate(22px, 22px);
+  }
+
+  .project-image {
+    grid-area: 1/1/-1/8;
+  }
+
+  .project-content {
+    grid-area: 1/7/-1/-1;
   }
 }
 

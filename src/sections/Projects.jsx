@@ -29,9 +29,11 @@ const projectsData = [
   },
 ];
 
+// skills-content relative container md:w-4/5 2xl:w-2/5 m-auto px-6 py-4 mt-48
+
 export const Projects = () => {
   return (
-    <section className="skills-content relative container md:w-4/5 2xl:w-2/5 m-auto px-6 py-4 mt-48">
+    <section className="skills-content relative container 2xl:w-1/2 m-auto px-6 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}
@@ -43,29 +45,27 @@ export const Projects = () => {
       <ul className="project-list">
         {projectsData.map((project) => (
           <li className="project-item mt-12" key={project.id}>
-            <article
-              className={`project-teaser sm:flex gap-5 ${project.id % 2 == 0 ? "flex-row-reverse" : ""}`}
-            >
+            <article className="project-teaser grid grid-cols-12 text-right">
               <a
-                className="block sm:w-1/2"
+                className="project-image block relative"
                 href={project.url}
                 target="_blank"
                 tabIndex={-1}
               >
-                <img
-                  className="project-image"
-                  src={project.image}
-                  alt={project.name}
-                />
+                <img src={project.image} alt={project.name} />
               </a>
-              <div className="project-content mt-5 sm:w-1/2 sm:mt-0">
+              <div className="project-content relative">
                 <span class="font-mono text-primary text-xs">
                   Featured Project
                 </span>
                 <a href={project.url} target="_blank">
-                  <h3 class="mt-2 text-2xl">{project.name}</h3>
+                  <h3 class="mt-2 text-2xl hover:text-primary">
+                    {project.name}
+                  </h3>
                 </a>
-                <p className="mt-4">{project.text}</p>
+                <p className="block mt-4 p-4 leading-loose bg-(--color-primary)">
+                  {project.text}
+                </p>
               </div>
             </article>
           </li>

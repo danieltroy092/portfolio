@@ -90,7 +90,7 @@ const tools = SkillsData.filter(
 
 export const Skills = () => {
   return (
-    <section className="skills-content relative container md:w-4/5 2xl:w-2/5 m-auto px-6 py-4 mt-48">
+    <section className="skills-content relative container md:w-4/5 2xl:w-1/2 m-auto px-6 py-4 mt-48">
       <h2 class="text-2xl">
         <span className="font-mono text-primary">
           {" "}
