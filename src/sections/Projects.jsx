@@ -43,9 +43,11 @@ export const Projects = () => {
       </h2>
 
       <ul className="project-list">
-        {projectsData.map((project) => (
-          <li className="project-item mt-12" key={project.id}>
-            <article className="project-teaser grid grid-cols-12 text-right">
+        {projectsData.map((project, i) => (
+          <li className="project-item mt-12" key={i}>
+            <article
+              className={`project-teaser ${(i + 1) % 2 == 0 ? "reverse" : ""} grid grid-cols-12 text-right`}
+            >
               <a
                 className="project-image block relative"
                 href={project.url}
@@ -55,11 +57,11 @@ export const Projects = () => {
                 <img src={project.image} alt={project.name} />
               </a>
               <div className="project-content relative">
-                <span class="font-mono text-primary text-xs">
+                <span className="block font-mono text-primary text-xs">
                   Featured Project
                 </span>
                 <a href={project.url} target="_blank">
-                  <h3 class="mt-2 text-2xl hover:text-primary">
+                  <h3 className="inline-block mt-2 text-2xl hover:text-primary">
                     {project.name}
                   </h3>
                 </a>

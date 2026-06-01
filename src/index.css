@@ -95,7 +95,7 @@
     opacity: 0;
   }
 
-  .skill-item:focus {
+  .skill-item:focus-visible {
     outline-color: yellow;
 
     & > .skill-label {
@@ -137,12 +137,25 @@
     transform: translate(22px, 22px);
   }
 
-  .project-image {
-    grid-area: 1/1/-1/8;
+  .project-teaser {
+    & > .project-image {
+      grid-area: 1/1/-1/8;
+    }
+
+    & > .project-content {
+      grid-area: 1/7/-1/-1;
+    }
   }
 
-  .project-content {
-    grid-area: 1/7/-1/-1;
+  .project-teaser.reverse {
+    & > .project-image {
+      grid-area: 1/6/-1/14;
+    }
+
+    & > .project-content {
+      text-align: left;
+      grid-area: 1/1/-1/8;
+    }
   }
 }
 
