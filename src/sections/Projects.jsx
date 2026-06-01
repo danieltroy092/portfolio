@@ -49,7 +49,7 @@ export const Projects = () => {
               className={`project-teaser ${(i + 1) % 2 == 0 ? "reverse" : ""} grid grid-cols-12 text-right`}
             >
               <a
-                className="project-image block relative"
+                className="project-image block relative overflow-hidden"
                 href={project.url}
                 target="_blank"
                 tabIndex={-1}
@@ -65,7 +65,7 @@ export const Projects = () => {
                     {project.name}
                   </h3>
                 </a>
-                <p className="block mt-4 p-4 leading-loose bg-(--color-primary)">
+                <p className="block mt-4 p-4 leading-loose sm:bg-(--color-surface)">
                   {project.text}
                 </p>
               </div>
