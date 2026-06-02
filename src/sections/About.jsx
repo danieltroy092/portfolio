@@ -2,12 +2,10 @@ export const About = () => {
   return (
     <section className="profile-content relative container 2xl:w-3/5 m-auto px-6 py-4">
       <h2 class="py-6 text-2xl font-semibold">
-        <span>
-          <a id="about" className="text-primary font-mono text-lg">
-            01.
-          </a>
-        </span>{" "}
-        About Me
+        <a id="about" className="text-primary font-mono text-lg">
+          01.
+        </a>{" "}
+        <span className="section-title relative">About Me</span>
       </h2>
       <div className="profile-text flex flex-col-reverse xl:flex-row gap-12 container">
         <div className="xl:w-1/2">

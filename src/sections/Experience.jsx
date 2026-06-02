@@ -14,13 +14,10 @@ export const Experience = () => {
   return (
     <section className="about-content container relative lg:w-4/5 2xl:w-3/5 m-auto px-4 py-4 mt-48">
       <h2 className="text-2xl font-semibold">
-        <span>
-          {" "}
-          <a id="experience" className="text-primary font-mono text-lg">
-            03.
-          </a>
-        </span>{" "}
-        Where I've worked
+        <a id="experience" className="text-primary font-mono text-lg">
+          03.
+        </a>{" "}
+        <span className="section-title relative">Where I've worked</span>
       </h2>
 
       <div className="mt-6">

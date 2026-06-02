@@ -35,13 +35,10 @@ export const Projects = () => {
   return (
     <section className="skills-content relative container 2xl:w-1/2 m-auto px-6 py-4 mt-48">
       <h2 className="text-2xl font-semibold">
-        <span>
-          {" "}
-          <a id="projects" className="text-primary font-mono text-lg">
-            04.
-          </a>
-        </span>{" "}
-        Some things I've built
+        <a id="projects" className="text-primary font-mono text-lg">
+          04.
+        </a>{" "}
+        <span className="section-title relative">Some things I've built</span>
       </h2>
 
       <ul className="project-list">
