@@ -140,10 +140,10 @@
   .profile-image {
     max-width: 300px;
     max-height: 300px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("profile-photo.png");
+    background-image: url("/public/profile-photo.png");
     background-color: var(--color-primary);
     background-blend-mode: luminosity;
     border-radius: var(--radius-small);

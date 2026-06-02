@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <section className="profile-content relative container 2xl:w-3/5 m-auto px-6 py-4">
-      <h2 class="py-6 text-2xl font-semibold">
+      <h2 className="py-6 text-2xl font-semibold">
         <a id="about" className="text-primary font-mono text-lg">
           01.
         </a>{" "}

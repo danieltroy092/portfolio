@@ -26,11 +26,13 @@ export const Navbar = () => {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-1 text-xs">
           <ol className="nav-list glass rounded-full flex items-center gap-1">
-            {navLinks.map((link, index) => (
-              <li className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-md">
+            {navLinks.map((link, i) => (
+              <li
+                className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-md"
+                key={i}
+              >
                 <a
                   href={link.href}
-                  key={index}
                   className="font-mono text-muted-foreground hover:text-primary rounded-full hover:bg-surface"
                 >
                   {link.label}
@@ -59,10 +61,10 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden glass-strong animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
-            {navLinks.map((link, index) => (
+            {navLinks.map((link, idx) => (
               <a
                 href={link.href}
-                key={index}
+                key={idx}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}

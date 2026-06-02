@@ -101,10 +101,11 @@ export const Skills = () => {
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
-          {frontend.map((skill) => (
+          {frontend.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20"
               tabIndex="0"
+              key={i}
             >
               <img
                 src={skill.icon}
@@ -122,10 +123,11 @@ export const Skills = () => {
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
-          {backend.map((skill) => (
+          {backend.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer"
               tabIndex="0"
+              key={i}
             >
               <img
                 src={skill.icon}
@@ -141,10 +143,11 @@ export const Skills = () => {
       <div className="skill-group mt-12">
         <h3 className="font-mono text-primary">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
-          {tools.map((skill) => (
+          {tools.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer"
               tabIndex="0"
+              key={i}
             >
               <img
                 src={skill.icon}

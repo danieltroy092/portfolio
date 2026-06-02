@@ -35,8 +35,10 @@ export const Experience = () => {
         </p>
 
         <ul className="mt-6 list-custom p-5">
-          {expData.map((data) => (
-            <li className="relative leading-loose">{data}</li>
+          {expData.map((data, i) => (
+            <li className="relative leading-loose" key={i}>
+              {data}
+            </li>
           ))}
         </ul>
       </div>
