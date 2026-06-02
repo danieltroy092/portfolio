@@ -45,7 +45,7 @@ export const Projects = () => {
         {projectsData.map((project, i) => (
           <li className="project-item mt-12" key={i}>
             <article
-              className={`project-teaser ${(i + 1) % 2 == 0 ? "reverse" : ""} grid grid-cols-12 text-right`}
+              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse" : ""} grid grid-cols-12`}
             >
               <a
                 className="project-image block relative overflow-hidden"
@@ -55,7 +55,9 @@ export const Projects = () => {
               >
                 <img src={project.image} alt={project.name} />
               </a>
-              <div className="project-content relative">
+              <div
+                className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
+              >
                 <span className="block font-mono text-primary text-xs">
                   Featured Project
                 </span>
@@ -64,7 +66,7 @@ export const Projects = () => {
                     {project.name}
                   </h3>
                 </a>
-                <p className="block mt-2 p-4 leading-relaxed sm:bg-(--color-surface)">
+                <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface)">
                   {project.text}
                 </p>
               </div>

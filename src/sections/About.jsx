@@ -7,7 +7,7 @@ export const About = () => {
         </a>{" "}
         <span className="section-title relative">About Me</span>
       </h2>
-      <div className="profile-text flex flex-col-reverse xl:flex-row gap-12 container">
+      <div className="profile-text flex flex-col-reverse items-center gap-12 container lg:flex-row lg:items-start">
         <div className="xl:w-1/2">
           <p>
             Hello! My name is Brittany and I enjoy creating things that live on

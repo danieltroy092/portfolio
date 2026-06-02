@@ -30,9 +30,11 @@ export const Hero = () => {
 
       {/** Content */}
       <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
-        <h1 className="text-primary text-xl font-mono">Hi, my name is</h1>
-        <h2 className="text-6xl mt-6 font-calibre-bold">Daniel Troy Ong.</h2>
-        <p className="text-6xl mt-2 font-calibre-bold">
+        <h1 className="text-primary md:text-xl font-mono">Hi, my name is</h1>
+        <h2 className="text-4xl md:text-6xl mt-6 font-calibre-bold">
+          Daniel Troy Ong.
+        </h2>
+        <p className="text-4xl md:text-6xl mt-2 font-calibre-bold">
           I build things for the web.
         </p>
 
