@@ -91,10 +91,12 @@ const tools = SkillsData.filter(
 export const Skills = () => {
   return (
     <section className="skills-content relative container md:w-4/5 2xl:w-1/2 m-auto px-6 py-4 mt-48">
-      <h2 class="text-2xl">
-        <span className="font-mono text-primary">
+      <h2 className="text-2xl font-semibold">
+        <span>
           {" "}
-          <a id="skills">02.</a>
+          <a id="skills" className="text-primary font-mono text-lg">
+            02.
+          </a>
         </span>{" "}
         What's in my toolbox
       </h2>

@@ -34,10 +34,12 @@ const projectsData = [
 export const Projects = () => {
   return (
     <section className="skills-content relative container 2xl:w-1/2 m-auto px-6 py-4 mt-48">
-      <h2 class="text-2xl">
-        <span className="font-mono text-primary">
+      <h2 className="text-2xl font-semibold">
+        <span>
           {" "}
-          <a id="projects">04.</a>
+          <a id="projects" className="text-primary font-mono text-lg">
+            04.
+          </a>
         </span>{" "}
         Some things I've built
       </h2>
@@ -61,11 +63,11 @@ export const Projects = () => {
                   Featured Project
                 </span>
                 <a href={project.url} target="_blank">
-                  <h3 className="inline-block mt-2 text-2xl hover:text-primary">
+                  <h3 className="inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">
                     {project.name}
                   </h3>
                 </a>
-                <p className="block mt-4 p-4 leading-loose sm:bg-(--color-surface)">
+                <p className="block mt-2 p-4 leading-relaxed sm:bg-(--color-surface)">
                   {project.text}
                 </p>
               </div>

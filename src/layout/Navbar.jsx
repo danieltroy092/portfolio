@@ -24,14 +24,14 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1">
-          <ol className="glass rounded-full flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1 text-xs">
+          <ol className="nav-list glass rounded-full flex items-center gap-1">
             {navLinks.map((link, index) => (
-              <li className="list-[decimal-leading-zero] list-inside px-3 py-2 text-md">
+              <li className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-md">
                 <a
                   href={link.href}
                   key={index}
-                  className="text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                  className="font-mono text-muted-foreground hover:text-primary rounded-full hover:bg-surface"
                 >
                   {link.label}
                 </a>

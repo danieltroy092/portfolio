@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Calibre-bold";
+  src: url("../src/assets/fonts/Calibre-Semibold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
   font-family: "Fira Code";
   src: url("../src/assets/fonts/FiraCode-Regular.ttf");
   font-weight: 400;
@@ -44,6 +52,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding: 100px;
+    font-size: 20px;
   }
 
   body {
@@ -54,6 +63,10 @@
 }
 
 @layer components {
+  .font-calibre-bold {
+    font-family: "Calibre-bold";
+    line-height: 1;
+  }
   .font-mono {
     font-family: "Fira Code", monospace;
   }
@@ -81,12 +94,17 @@
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 
+  .nav-list-item::marker {
+    color: var(--color-primary);
+  }
+
   .list-custom li::before {
     position: absolute;
     content: "▶";
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: var(--color-primary);
     left: -20px;
+    top: 6px;
   }
 
   .skill-image {

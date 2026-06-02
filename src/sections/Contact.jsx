@@ -100,18 +100,15 @@ export const Contact = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span
             id="contact"
-            className="text-secondary-foreground text-xl font-medium tracking-tight"
+            className="text-secondary-foreground font-mono tracking-tight"
           >
-            05. Get in Touch
+            05. What's Next?
           </span>
-          <h2 className="">
-            Let's build{" "}
-            <span className="font-mono italic font-normal text-white">
-              something great.
-            </span>
+          <h2 className="font-calibre-bold text-white mt-4 text-5xl">
+            Get In Touch
           </h2>
 
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground lg:w-1/2 mt-4 m-auto">
             Have a project in mind? I'd love to hear about it. Drop me a message
             and let's discuss how we can work together.
           </p>
