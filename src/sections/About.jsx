@@ -31,7 +31,7 @@ export const About = () => {
           </p>
         </div>
         <div className="relative xl:w-1/2 ">
-          <span className="profile-image block relative size-full"></span>
+          <span className="profile-image block relative"></span>
           <span className="profile-image--accent"></span>
         </div>
       </div>
