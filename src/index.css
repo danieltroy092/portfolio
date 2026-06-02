@@ -30,16 +30,16 @@
 
   --color-card: #141a1f;
 
-  --color-primary: #20b2a6;
+  --color-primary: #20b2a6; /* 20b2a6 */
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #d0f5f1;
+  --color-secondary: #99ccbd; /* #d0f5f1 */
   --color-secondary-foreground: #20b2a6;
 
-  --color-tertiary: #759694;
+  --color-tertiary: #66b39c;
 
   --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
+  --color-muted-foreground: #14716a;
 
   --radius: 0.75rem;
   --radius-small: 0.25rem;
@@ -70,6 +70,11 @@
   }
   .font-mono {
     font-family: "Fira Code", monospace;
+  }
+
+  .button {
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-small);
   }
 
   .glass {
@@ -145,7 +150,7 @@
     background-position: center;
     background-image: url("/public/profile-photo.png");
     background-color: var(--color-primary);
-    background-blend-mode: luminosity;
+    background-blend-mode: darken;
     border-radius: var(--radius-small);
     transition: all 250ms ease;
 

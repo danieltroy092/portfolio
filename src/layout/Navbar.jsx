@@ -14,7 +14,7 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-5 z-50">
+    <header className="fixed top-0 left-0 right-0 py-5 z-50 bg-background sm:bg-transparent">
       <nav className="container mx-auto px-6 flex justify-between">
         <a
           href="#"
@@ -24,27 +24,19 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1 text-xs">
-          <ol className="nav-list glass rounded-full flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1 text-xs glass rounded-xs">
+          <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
                 className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-md"
                 key={i}
               >
-                <a
-                  href={link.href}
-                  className="font-mono text-muted-foreground hover:text-primary rounded-full hover:bg-surface"
-                >
+                <a href={link.href} className="font-mono  hover:text-primary">
                   {link.label}
                 </a>
               </li>
             ))}
           </ol>
-
-          {/* CV Button */}
-          <div className="hidden lg:block">
-            <Button size="sm">Download CV</Button>
-          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -59,13 +51,13 @@ export const Navbar = () => {
       {/* Mobile Menu */}
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden glass-strong animate-fade-in">
+        <div className="lg:hidden animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, idx) => (
               <a
                 href={link.href}
                 key={idx}
-                className="text-lg text-muted-foreground hover:text-foreground py-2"
+                className="text-lg active:text-primary py-2"
               >
                 {link.label}
               </a>
