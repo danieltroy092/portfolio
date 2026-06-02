@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Calibre";
+  src: url("../src/assets/fonts/Calibre-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../src/assets/fonts/FiraCode-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
 @import "tailwindcss";
 
 @theme {
@@ -34,15 +49,15 @@
   body {
     color: var(--color-primary-foreground);
     background-color: var(--color-background);
-    font-family: "Work Sans", sans-serif;
-  }
-
-  .font-mono {
-    font-family: "Fira Code", monospace;
+    font-family: "Calibre", sans-serif;
   }
 }
 
 @layer components {
+  .font-mono {
+    font-family: "Fira Code", monospace;
+  }
+
   .glass {
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);
