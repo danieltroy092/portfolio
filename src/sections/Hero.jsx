@@ -49,11 +49,10 @@ export const Hero = () => {
         </p>
 
         <div data-aos="fade-up" data-aos-delay="800" className="mt-6 lg:w-1/2">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          <p className="text-lg">
+            I am a front-end developer with 4+ years of experience in creating
+            responsive, accessible and pixel-perfect user interfaces utilising{" "}
+            <a>Drupal CMS</a>.
           </p>
         </div>
       </div>

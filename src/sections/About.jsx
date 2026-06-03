@@ -13,14 +13,11 @@ export const About = () => {
           data-aos-duration="1000"
           className="xl:w-1/2"
         >
-          <p>
-            Hello! I'm Troy, a front-end developer from Newport, Wales
-            specialising in crafting accessible, pixel-perfect user interfaces.
-          </p>
+          <p></p>
 
           <p className="mt-4">
-            My passion for web development started in my early teenage years
-            when I began tweaking{" "}
+            Hello! I'm Troy from Newport, Wales. My passion for web development
+            started in my early teenage years when I began tweaking{" "}
             <a
               href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
               target="_blank"
@@ -45,6 +42,20 @@ export const About = () => {
               University of the West of England (UWE)
             </a>
             , where I graduated in 2019.
+          </p>
+
+          <p className="mt-4">
+            Fast-forward to today, where I've had the privilege of working for a{" "}
+            <a
+              href="https://hoffi.com/who-we-are"
+              target="_blank"
+              className="text-primary"
+            >
+              digital design agency
+            </a>{" "}
+            that allowed me to hone and improve my skills in building
+            aesthetically pleasing, accessible and robust technical solutions
+            for the digital world.
           </p>
         </div>
         <div
