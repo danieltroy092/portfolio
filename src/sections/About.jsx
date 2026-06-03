@@ -14,24 +14,37 @@ export const About = () => {
           className="xl:w-1/2"
         >
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hello! I'm Troy, a front-end developer from Newport, Wales
+            specialising in crafting accessible, pixel-perfect user interfaces.
           </p>
 
           <p className="mt-4">
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            My passion for web development started in my early teenage years
+            when I began tweaking{" "}
+            <a
+              href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
+              target="_blank"
+              className="text-primary"
+            >
+              Bebo
+            </a>{" "}
+            themes to personalize my profile, aiming to show some creativity and
+            impress my friends.
           </p>
 
           <p className="mt-4">
-            I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React.
+            That experience taught me a lot about HTML and CSS, and it sparked
+            my interest to dive deeper, setting me on a path to a career in
+            tech. It eventually led me to sign up for a Computer Science course
+            at the{" "}
+            <a
+              href="https://www.uwe.ac.uk/about"
+              target="_blank"
+              className="text-primary"
+            >
+              University of the West of England (UWE)
+            </a>
+            , where I graduated in 2019.
           </p>
         </div>
         <div
