@@ -231,7 +231,7 @@
       grid-area: 1/1/-1/8;
     }
     .project-content {
-      grid-area: 1/7/-1/-1;
+      grid-area: 1/6/-1/-1;
     }
 
     .reverse .project-image {
@@ -240,7 +240,7 @@
 
     .reverse .project-content {
       text-align: left;
-      grid-area: 1/1/-1/7;
+      grid-area: 1/1/-1/8;
     }
   }
 
