@@ -97,7 +97,7 @@ export const Contact = () => {
       </div>
 
       <div className="container mx-auto relative px-6 z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div data-aos="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <span
             id="contact"
             className="text-secondary-foreground font-mono tracking-tight"
@@ -115,7 +115,10 @@ export const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="glass p-8 rounded-3xl border border-primary/30">
+          <div
+            data-aos="fade-right"
+            className="glass p-8 rounded-3xl border border-primary/30"
+          >
             <form className="form space-y-6" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label
@@ -214,7 +217,7 @@ export const Contact = () => {
             </form>
           </div>
 
-          <div className="space-y-6 animate-fade-in animation-delay-400">
+          <div data-aos="fade-left" className="space-y-6">
             <div className="glass rounded-3xl p-8">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information

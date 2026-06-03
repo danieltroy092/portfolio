@@ -13,7 +13,7 @@ const expData = [
 export const Experience = () => {
   return (
     <section className="about-content container relative lg:w-4/5 2xl:w-3/5 m-auto px-4 py-4 mt-48">
-      <h2 className="text-2xl font-semibold">
+      <h2 data-aos="fade-up" className="text-2xl font-semibold">
         <a id="experience" className="text-primary font-mono text-lg">
           03.
         </a>{" "}
@@ -21,7 +21,11 @@ export const Experience = () => {
       </h2>
 
       <div className="mt-6">
-        <h3 className="text-xl font-calibre-bold">
+        <h3
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="text-xl font-calibre-bold"
+        >
           Frontend Developer{" "}
           <span className="text-primary">
             @{" "}
@@ -30,11 +34,19 @@ export const Experience = () => {
             </a>
           </span>
         </h3>
-        <p className="text-xs font-mono text-foreground">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="text-xs font-mono text-foreground"
+        >
           October 2020 - April 2025
         </p>
 
-        <ul className="mt-6 list-custom p-5">
+        <ul
+          data-aos="fade-up"
+          data-aos-delay="500"
+          className="mt-6 list-custom p-5"
+        >
           {expData.map((data, i) => (
             <li className="relative leading-loose" key={i}>
               {data}

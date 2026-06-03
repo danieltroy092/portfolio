@@ -91,14 +91,14 @@ const tools = SkillsData.filter(
 export const Skills = () => {
   return (
     <section className="skills-content relative container md:w-4/5 2xl:w-1/2 m-auto px-6 py-4 mt-48">
-      <h2 className="text-2xl font-semibold">
+      <h2 data-aos="fade-up" className="text-2xl font-semibold">
         <a id="skills" className="text-primary font-mono text-lg">
           02.
         </a>{" "}
         <span className="section-title relative">What's in my toolbox</span>
       </h2>
 
-      <div className="skill-group mt-12">
+      <div data-aos="fade-up" className="skill-group mt-12">
         <h3 className="font-mono text-primary">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {frontend.map((skill, i) => (
@@ -120,7 +120,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12">
+      <div data-aos="fade-up" className="skill-group mt-12">
         <h3 className="font-mono text-primary">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill, i) => (
@@ -140,7 +140,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12">
+      <div data-aos="fade-up" className="skill-group mt-12">
         <h3 className="font-mono text-primary">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill, i) => (

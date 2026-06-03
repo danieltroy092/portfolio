@@ -30,15 +30,25 @@ export const Hero = () => {
 
       {/** Content */}
       <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
-        <h1 className="md:text-xl font-mono">Hi, my name is</h1>
-        <h2 className="text-secondary text-4xl md:text-6xl mt-6 font-calibre-bold">
+        <h1 data-aos="fade-up" className="md:text-xl font-mono">
+          Hi, my name is
+        </h1>
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="text-secondary text-4xl md:text-6xl mt-6 font-calibre-bold"
+        >
           Daniel Troy Ong.
         </h2>
-        <p className="text-tertiary text-4xl md:text-6xl mt-2 font-calibre-bold">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="text-tertiary text-4xl md:text-6xl mt-2 font-calibre-bold"
+        >
           I build things for the web.
         </p>
 
-        <div className="mt-6 lg:w-1/2">
+        <div data-aos="fade-up" data-aos-delay="800" className="mt-6 lg:w-1/2">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

@@ -148,7 +148,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/public/profile-photo.png");
+    background-image: url("/profile-photo.png");
     background-color: var(--color-primary);
     background-blend-mode: darken;
     border-radius: var(--radius-small);

@@ -24,7 +24,10 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-1 text-xs glass rounded-xs">
+        <div
+          data-aos="fade-down"
+          className="hidden lg:flex items-center gap-1 text-xs glass rounded-xs"
+        >
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
