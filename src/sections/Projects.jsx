@@ -45,6 +45,7 @@ export const Projects = () => {
         {projectsData.map((project, i) => (
           <li
             data-aos={`${(i + 1) % 2 === 0 ? "fade-right" : "fade-left"}`}
+            data-aos-duration="1000"
             className="project-item mt-12"
             key={i}
           >

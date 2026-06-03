@@ -117,6 +117,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div
             data-aos="fade-right"
+            data-aos-duration="1000"
             className="glass p-8 rounded-3xl border border-primary/30"
           >
             <form className="form space-y-6" onSubmit={handleSubmit}>
@@ -217,7 +218,11 @@ export const Contact = () => {
             </form>
           </div>
 
-          <div data-aos="fade-left" className="space-y-6">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="space-y-6"
+          >
             <div className="glass rounded-3xl p-8">
               <h3 className="text-xl font-semibold mb-6">
                 Contact Information

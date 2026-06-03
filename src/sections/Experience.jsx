@@ -24,6 +24,7 @@ export const Experience = () => {
         <h3
           data-aos="fade-up"
           data-aos-delay="200"
+          data-aos-duration="1000"
           className="text-xl font-calibre-bold"
         >
           Frontend Developer{" "}
@@ -37,6 +38,7 @@ export const Experience = () => {
         <p
           data-aos="fade-up"
           data-aos-delay="400"
+          data-aos-duration="1000"
           className="text-xs font-mono text-foreground"
         >
           October 2020 - April 2025
@@ -45,6 +47,7 @@ export const Experience = () => {
         <ul
           data-aos="fade-up"
           data-aos-delay="500"
+          data-aos-duration="1000"
           className="mt-6 list-custom p-5"
         >
           {expData.map((data, i) => (

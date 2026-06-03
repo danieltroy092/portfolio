@@ -98,7 +98,11 @@ export const Skills = () => {
         <span className="section-title relative">What's in my toolbox</span>
       </h2>
 
-      <div data-aos="fade-up" className="skill-group mt-12">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="skill-group mt-12"
+      >
         <h3 className="font-mono text-primary">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {frontend.map((skill, i) => (
@@ -120,7 +124,11 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div data-aos="fade-up" className="skill-group mt-12">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="skill-group mt-12"
+      >
         <h3 className="font-mono text-primary">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill, i) => (
@@ -140,7 +148,11 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div data-aos="fade-up" className="skill-group mt-12">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="skill-group mt-12"
+      >
         <h3 className="font-mono text-primary">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill, i) => (
