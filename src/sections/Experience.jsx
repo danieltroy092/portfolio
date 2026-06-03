@@ -27,7 +27,7 @@ export const Experience = () => {
           data-aos-duration="1000"
           className="text-xl font-calibre-bold"
         >
-          Frontend Developer{" "}
+          Front-end Developer{" "}
           <span className="text-primary">
             @{" "}
             <a href="https://hoffi.com/" target="_blank">

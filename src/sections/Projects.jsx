@@ -4,28 +4,28 @@ const projectsData = [
     name: "Digital Public Services Wales",
     image: "dpsw.png",
     url: "https://digitalpublicservices.gov.wales/",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    text: "A government site used by the team tasked to deliver digital public services for the country. Built using the Welsh government GEL design system placing great emphasis on accessibility and design consistency improving user experience.",
   },
   {
     id: 2,
     name: "Creativity Culture Education",
     image: "cce.png",
     url: "https://creativitycultureeducation.org/",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    text: "Built a for a UK non-profit organisation, involving a custom JS feature to better display data regarding the organisation partners along with an integrated mailing system streamlining communications between admin and users.",
   },
   {
     id: 3,
     name: "Universities Wales",
     image: "uniw.png",
     url: "https://uniswales.ac.uk/",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    text: "Built for the group representing Welsh Universities. It involves a custom module that sets a custom theme based on url for specific sections of the site. Additionally external libraries were added such as Masonry & Owl Carousel to improve representation of data enhancing user experience.",
   },
   {
     id: 4,
     name: "Bextra",
     image: "bextra.png",
     url: "https://bextra.cymru/",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    text: "A bilingual website with a Welsh first approach created as a resource used within the Health and Wellbeing curriculum. Built with great emphasis on accurate translations to provide a good experience to user who are Welsh native speakers.",
   },
 ];
 
@@ -71,7 +71,7 @@ export const Projects = () => {
                     {project.name}
                   </h3>
                 </a>
-                <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface)">
+                <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface) text-sm text-pretty">
                   {project.text}
                 </p>
               </div>
