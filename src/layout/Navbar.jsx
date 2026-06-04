@@ -46,6 +46,7 @@ export const Navbar = () => {
         <button
           className="lg:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          aria-label="toggle button for menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
