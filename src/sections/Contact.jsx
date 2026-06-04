@@ -108,7 +108,7 @@ export const Contact = () => {
             Get In Touch
           </h2>
 
-          <p className="text-muted-foreground lg:w-1/2 mt-4 m-auto">
+          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty">
             Have a project in mind? I'd love to hear about it. Drop me a message
             and let's discuss how we can work together.
           </p>

@@ -50,31 +50,31 @@ export const Projects = () => {
             key={i}
           >
             <article
-              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse" : ""} grid grid-cols-12`}
+              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse" : ""}`}
             >
               <a
-                className="project-image block relative overflow-hidden"
+                className="block grid grid-cols-12"
                 href={project.url}
                 target="_blank"
                 tabIndex={-1}
               >
-                <img src={project.image} alt={project.name} />
-              </a>
-              <div
-                className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
-              >
-                <span className="block font-mono text-primary text-xs">
-                  Featured Project
+                <span className="project-image block relative overflow-hidden">
+                  <img src={project.image} alt={project.name} />
                 </span>
-                <a href={project.url} target="_blank">
+                <div
+                  className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
+                >
+                  <span className="block font-mono text-primary text-xs">
+                    Featured Project
+                  </span>
                   <h3 className="inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">
                     {project.name}
                   </h3>
-                </a>
-                <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface) text-sm text-pretty">
-                  {project.text}
-                </p>
-              </div>
+                  <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface) text-sm text-pretty">
+                    {project.text}
+                  </p>
+                </div>
+              </a>
             </article>
           </li>
         ))}

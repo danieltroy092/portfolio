@@ -5,7 +5,7 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/hero-bg.webp"
-          alt="hero image"
+          alt="neon turquoise grid on a black background"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
@@ -30,23 +30,25 @@ export const Hero = () => {
 
       {/** Content */}
       <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
-        <h1 data-aos="fade-up" className="md:text-xl font-mono">
-          Hi, my name is
+        <h1>
+          <span data-aos="fade-up" className="block md:text-xl font-mono">
+            Hi, my name is
+          </span>
+          <span
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="block text-secondary text-4xl md:text-6xl mt-6 font-calibre-bold"
+          >
+            Daniel Troy Ong.
+          </span>
+          <span
+            data-aos="fade-up"
+            data-aos-delay="600"
+            className="block text-tertiary text-4xl md:text-6xl mt-2 font-calibre-bold"
+          >
+            I build things for the web.
+          </span>
         </h1>
-        <h2
-          data-aos="fade-up"
-          data-aos-delay="300"
-          className="text-secondary text-4xl md:text-6xl mt-6 font-calibre-bold"
-        >
-          Daniel Troy Ong.
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="text-tertiary text-4xl md:text-6xl mt-2 font-calibre-bold"
-        >
-          I build things for the web.
-        </p>
 
         <div data-aos="fade-up" data-aos-delay="800" className="mt-6 lg:w-1/2">
           <p className="text-lg">

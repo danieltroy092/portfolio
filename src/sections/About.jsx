@@ -63,7 +63,10 @@ export const About = () => {
           data-aos-duration="1000"
           className="relative xl:w-1/2 "
         >
-          <span className="profile-image block relative"></span>
+          <span
+            className="profile-image block relative"
+            aria-label="a portrait image of Troy; a south east asian man with brown skin, dark hair and goatee"
+          ></span>
           <span className="profile-image--accent"></span>
         </div>
       </div>

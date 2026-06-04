@@ -116,9 +116,9 @@ export const Skills = () => {
                 alt={`logo for ${skill.name}`}
                 className="skill-image max-w-[70px]"
               />
-              <p className="skill-label text-sm" tabIndex="0">
-                {skill.name}
-              </p>
+              <div className="skill-label" role="tooltip">
+                <p className="text-sm">{skill.name}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -142,7 +142,9 @@ export const Skills = () => {
                 alt={`logo for ${skill.name}`}
                 className="skill-image max-w-[70px]"
               />
-              <p className="skill-label text-sm">{skill.name}</p>
+              <div className="skill-label" role="tooltip">
+                <p className="text-sm">{skill.name}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -166,7 +168,9 @@ export const Skills = () => {
                 alt={`logo for ${skill.name}`}
                 className="skill-image max-w-[70px]"
               />
-              <p className="skill-label text-sm">{skill.name}</p>
+              <div className="skill-label" role="tooltip">
+                <p className="text-sm">{skill.name}</p>
+              </div>
             </li>
           ))}
         </ul>
