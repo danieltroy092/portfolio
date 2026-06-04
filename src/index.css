@@ -65,7 +65,8 @@
 
 @layer components {
   .font-calibre-bold {
-    font-family: "Calibre-bold";
+    font-family: "Calibre-bold", sans-serif;
+    font-weight: 700;
     line-height: 1;
   }
   .font-mono {
@@ -290,9 +291,5 @@
     75% {
       transform: translate(30px, 10px);
     }
-  }
-
-  .animate-fade-in {
-    animation: fade-in 0.8s ease-out both;
   }
 }
