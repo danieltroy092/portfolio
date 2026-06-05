@@ -101,6 +101,22 @@
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 
+  .gradient-text {
+    color: transparent;
+    background: linear-gradient(
+      to right,
+      var(--color-muted-foreground),
+      var(--color-primary),
+      var(--color-highlight),
+      var(--color-primary),
+      var(--color-muted-foreground),
+      var(--color-highlight)
+    );
+    background-clip: text;
+    background-size: 200%;
+    animation: gradient 8s linear infinite;
+  }
+
   .nav-list-item::marker {
     color: var(--color-primary);
   }
@@ -290,6 +306,16 @@
     }
     75% {
       transform: translate(30px, 10px);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
     }
   }
 }

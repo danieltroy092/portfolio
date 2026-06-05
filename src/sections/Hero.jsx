@@ -31,27 +31,27 @@ export const Hero = () => {
       {/** Content */}
       <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
         <h1>
-          <span data-aos="fade-up" className="block md:text-xl font-mono">
+          <span data-aos="fade-up" className="block md:text-lg font-mono">
             Hi, my name is
           </span>
           <span
             data-aos="fade-up"
             data-aos-delay="300"
-            className="block text-secondary text-4xl md:text-6xl mt-6 font-calibre-bold"
+            className="block text-4xl md:text-6xl mt-4 font-calibre-bold gradient-text"
           >
             Daniel Troy Ong.
           </span>
           <span
             data-aos="fade-up"
             data-aos-delay="600"
-            className="block text-tertiary text-4xl md:text-6xl mt-2 font-calibre-bold"
+            className="block text-4xl md:text-6xl mt-2 font-calibre-bold gradient-text"
           >
             I build things for the web.
           </span>
         </h1>
 
         <div data-aos="fade-up" data-aos-delay="800" className="mt-6 lg:w-1/2">
-          <p className="text-lg">
+          <p className="text-lg text-pretty">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
             <a>Drupal CMS</a>.
