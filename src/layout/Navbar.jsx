@@ -25,7 +25,10 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div data-aos="fade-down" className="hidden lg:flex items-center gap-1">
+        <div
+          data-aos="fade-down"
+          className="hidden lg:flex bg-background items-center gap-1"
+        >
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
@@ -34,7 +37,7 @@ export const Navbar = () => {
               >
                 <a
                   href={link.href}
-                  className="link font-mono text-white  hover:text-primary focus:text-background"
+                  className="link font-mono text-white  hover:text-highlight focus:text-background"
                 >
                   {link.label}
                 </a>
