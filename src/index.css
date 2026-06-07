@@ -158,6 +158,7 @@
   }
 
   .button-link:focus-visible {
+    font-weight: 600;
     color: var(--color-background);
     background: var(--color-highlight);
   }
