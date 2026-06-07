@@ -24,14 +24,11 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div
-          data-aos="fade-down"
-          className="hidden lg:flex items-center gap-1 text-xs glass rounded-xs"
-        >
+        <div data-aos="fade-down" className="hidden lg:flex items-center gap-1">
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
-                className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-md"
+                className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs"
                 key={i}
               >
                 <a href={link.href} className="font-mono  hover:text-primary">
@@ -40,6 +37,7 @@ export const Navbar = () => {
               </li>
             ))}
           </ol>
+          <Button className="text-xs">Download CV</Button>
         </div>
 
         {/* Mobile Menu Button */}

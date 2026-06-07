@@ -61,6 +61,66 @@
     background-color: var(--color-background);
     font-family: "Calibre", sans-serif;
   }
+
+  @property --button-fill {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+  }
+
+  @property --button-fill-stop {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+  }
+
+  @property --rg-1-x {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+  }
+
+  @property --rg-1-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 50%;
+  }
+
+  @property --rg-2-x {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 20%;
+  }
+
+  @property --rg-2-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 70%;
+  }
+
+  @property --rg-3-x {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 70%;
+  }
+
+  @property --rg-3-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 20%;
+  }
+
+  @property --rg-4-x {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 50%;
+  }
+
+  @property --rg-4-y {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 50%;
+  }
 }
 
 @layer components {
@@ -101,14 +161,85 @@
       inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
   }
 
+  .gradient-button {
+    padding: 4px 8px;
+    border: 2px solid transparent;
+    transition:
+      --button-fill 1s,
+      --button-fill-stop 0.5s;
+    animation: gradient-movement 4s alternate infinite ease-in-out;
+    animation-delay: calc(sibling-index() * -2000ms);
+    background:
+      radial-gradient(
+          circle,
+          var(--button-fill) var(--button-fill-stop),
+          transparent
+        )
+        padding-box,
+      radial-gradient(
+          circle 120px at var(--rg-1-x) var(--rg-1-y),
+          var(--color-muted-foreground),
+          transparent
+        )
+        border-box,
+      radial-gradient(
+          circle 140px at var(--rg-2-x) var(--rg-2-y),
+          var(--color-secondary-foreground),
+          transparent
+        )
+        border-box,
+      radial-gradient(
+          circle 160px at var(--rg-3-x) var(--rg-3-y),
+          var(--color-highlight),
+          transparent
+        )
+        border-box,
+      radial-gradient(
+          circle 200px at var(--rg-4-x) var(--rg-4-y),
+          var(--color-secondary-foreground),
+          transparent
+        )
+        border-box;
+
+    background-position:
+      center,
+      center,
+      bottom right,
+      top left,
+      top right,
+      bottom left;
+
+    background-repeat: no-repeat;
+  }
+
+  .gradient-button:hover,
+  .gradient-button:focus-visible {
+    --button-fill-stop: 100%;
+    --button-fill: var(--button-fill-hover, var(--color-background));
+  }
+
+  .gradient-button.bordered {
+    --button-fill-stop: 100%;
+    --button-fill: var(--color-background);
+  }
+
+  .gradient-button.bordered:is(:hover, :focus-visible) {
+    --button-fill-stop: 0%;
+    --button-fill: transparent;
+  }
+
+  .gradient-button.bordered:hover {
+    color: var(--color-surface);
+  }
+
   .gradient-text {
     color: transparent;
     background: linear-gradient(
       to right,
       var(--color-muted-foreground),
-      var(--color-primary),
+      var(--color-secondary-foreground),
       var(--color-highlight),
-      var(--color-primary),
+      var(--color-secondary-foreground),
       var(--color-muted-foreground),
       var(--color-highlight)
     );
@@ -167,7 +298,8 @@
     background-position: center;
     background-image: url("/profile-photo.webp");
     background-color: var(--color-primary);
-    background-blend-mode: darken;
+    background-blend-mode: luminosity;
+    filter: brightness(80%);
     border-radius: var(--radius-small);
     transition: all 250ms ease;
 
@@ -316,6 +448,31 @@
 
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient-movement {
+    30% {
+      --rg-1-x: 70%;
+      --rg-1-y: 20%;
+    }
+
+    40% {
+      --rg-2-x: 120%;
+      --rg-2-y: 50%;
+    }
+    45% {
+      --rg-4-x: -10%;
+      --rg-4-y: 10%;
+    }
+    50% {
+      --rg-3-x: 50%;
+      --rg-3-y: 50%;
+    }
+
+    70% {
+      --rg-1-x: -10%;
+      --rg-2-y: -20%;
     }
   }
 }

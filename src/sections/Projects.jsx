@@ -64,7 +64,7 @@ export const Projects = () => {
                 <div
                   className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
                 >
-                  <span className="block font-mono text-primary text-xs">
+                  <span className="block font-mono text-highlight text-xs">
                     Featured Project
                   </span>
                   <h3 className="inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">

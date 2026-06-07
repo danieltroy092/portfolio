@@ -17,15 +17,15 @@ export const About = () => {
 
           <p className="mt-4">
             Hello! I'm Troy from Newport, Wales. My passion for web development
-            started in my early teenage years when I began tweaking{" "}
+            started in my early teenage years when I began tinkering with{" "}
             <a
               href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
               target="_blank"
               className="text-primary"
             >
-              Bebo
+              Bebo themes
             </a>{" "}
-            themes to personalize my profile, aiming to show some creativity and
+            to personalize my profile, aiming to show some creativity and
             impress my friends.
           </p>
 
@@ -55,7 +55,7 @@ export const About = () => {
             </a>{" "}
             that allowed me to hone and improve my skills in building
             aesthetically pleasing, accessible and robust technical solutions
-            for the digital world.
+            for the world wide web.
           </p>
         </div>
         <div

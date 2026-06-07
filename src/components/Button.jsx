@@ -5,11 +5,11 @@ export const Button = ({
   ...props
 }) => {
   const baseClasses =
-    "button relative overflow-hidden font-medium focus:outline-none focus-visible:ring-2 focus visible:ring-primary text-primary-foreground active:text-primary hover:bg-primary/90 shadow-primary/25 leading-none font-mono";
+    "button relative overflow-hidden font-medium focus:outline-none focus-visible:ring-2 focus visible:ring-primary active:text-primary hover:bg-primary/90 shadow-primary/25 leading-none font-mono gradient-button";
 
   const sizeClasses = {
     sm: "px-2 py-2 text-xs",
-    default: "px-6 py-3 text-base",
+    default: "px-2 py-2 text-base",
     lg: "px-8 py-4 text-lg",
   };
 
@@ -17,7 +17,7 @@ export const Button = ({
 
   return (
     <button className={classes} {...props}>
-      <span className="relative flex items-center justify-center gap-2 cursor-pointer">
+      <span className="relative flex items-center justify-center cursor-pointer">
         {children}
       </span>
     </button>

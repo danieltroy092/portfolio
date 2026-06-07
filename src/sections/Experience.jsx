@@ -25,7 +25,7 @@ export const Experience = () => {
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="1000"
-          className="text-xl font-calibre-bold"
+          className="text-xl  font-calibre-bold"
         >
           Front-end Developer{" "}
           <span className="text-primary">

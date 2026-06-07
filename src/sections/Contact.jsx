@@ -182,19 +182,12 @@ export const Contact = () => {
               </div>
 
               <Button
-                className="w-full"
+                className="block m-auto button bordered"
                 type="submit"
                 size="lg"
                 disabled={isLoading}
               >
-                {isLoading ? (
-                  <>Sending...</>
-                ) : (
-                  <>
-                    Send Message
-                    <Send className="w-5 h-5" />
-                  </>
-                )}
+                {isLoading ? <>Sending...</> : <>Send Message</>}
               </Button>
 
               {/** submit message */}

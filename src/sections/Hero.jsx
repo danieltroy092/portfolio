@@ -1,3 +1,5 @@
+import { Button } from "@components/Button";
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -49,14 +51,23 @@ export const Hero = () => {
             I build things for the web.
           </span>
         </h1>
-
-        <div data-aos="fade-up" data-aos-delay="800" className="mt-6 lg:w-1/2">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="800"
+          className="flex mt-4 lg:w-1/2"
+        >
           <p className="text-lg text-pretty">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
             <a>Drupal CMS</a>.
           </p>
         </div>
+        <a
+          className="inline-block relative mt-8 py-2 px-6 font-mono text-sm font-semibold button gradient-button bordered"
+          href="#contact"
+        >
+          Get in Touch
+        </a>{" "}
       </div>
     </section>
   );
