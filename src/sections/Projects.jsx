@@ -52,11 +52,11 @@ export const Projects = () => {
             <article
               className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse" : ""}`}
             >
+              {" "}
               <a
-                className="block grid grid-cols-12"
+                className="project-link block grid grid-cols-12 outline-none"
                 href={project.url}
                 target="_blank"
-                tabIndex={-1}
               >
                 <span className="project-image block relative overflow-hidden">
                   <img src={project.image} alt={project.name} />
@@ -64,13 +64,13 @@ export const Projects = () => {
                 <div
                   className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
                 >
-                  <span className="block font-mono text-highlight text-xs">
+                  <span className="block font-mono text-primary text-xs">
                     Featured Project
                   </span>
-                  <h3 className="project-title inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">
+                  <h3 className="project-title inline-block mt-2 text-2xl font-calibre-bold">
                     {project.name}
                   </h3>
-                  <p className="block mt-2 md:p-4 leading-relaxed text-white sm:bg-(--color-surface) text-sm text-pretty">
+                  <p className="project-summary block mt-2 md:p-4 leading-relaxed text-white sm:bg-(--color-surface) text-sm text-pretty">
                     {project.text}
                   </p>
                 </div>

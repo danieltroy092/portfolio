@@ -60,7 +60,11 @@ export const Hero = () => {
           <p className="text-lg text-pretty">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
-            <a href="https://new.drupal.org/home" target="_blank">
+            <a
+              href="https://new.drupal.org/home"
+              target="_blank"
+              className="link"
+            >
               Drupal CMS
             </a>
             .

@@ -62,7 +62,7 @@
     font-family: "Calibre", sans-serif;
   }
 
-  a {
+  .link {
     color: var(--color-primary);
 
     &:hover {
@@ -157,10 +157,12 @@
     border-radius: var(--radius-small);
   }
 
+  .button:focus-visible,
   .button-link:focus-visible {
     font-weight: 600;
     color: var(--color-background);
     background: var(--color-highlight);
+    outline: none;
   }
 
   .glass {
@@ -356,11 +358,7 @@
 
   .project-image img {
     transform: scale(1);
-    transition: transform 150ms ease-in-out;
-  }
-
-  .project-image:hover img {
-    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
   }
 
   .project-image::after {
@@ -374,11 +372,7 @@
     filter: brightness(50%);
     mix-blend-mode: multiply;
     opacity: 1;
-    transition: opacity 250ms ease-in-out;
-  }
-
-  .project-image:hover::after {
-    opacity: 0;
+    transition: opacity 200ms ease-in-out;
   }
 
   .project-image,
@@ -392,6 +386,42 @@
 
   .project-content p {
     border-radius: var(--radius-small);
+  }
+
+  .project-link:hover .project-summary,
+  .project-link:active .project-summary,
+  .project-link:focus-visible .project-summary {
+    outline: none;
+    color: var(--color-background) !important;
+    background-color: var(--color-highlight) !important;
+  }
+
+  .project-link:hover .project-title,
+  .project-link:active .project-title,
+  .project-link:focus-visible .project-title {
+    color: var(--color-highlight);
+  }
+
+  .project-link:focus img,
+  .project-link:active img,
+  .project-link:hover img {
+    transform: scale(1.1);
+  }
+
+  .project-link:focus .project-image::after,
+  .project-link:active .project-image::after,
+  .project-link:hover .project-image::after {
+    opacity: 0;
+  }
+
+  .contact-item:focus-visible .item-icon,
+  .contact-item:active .item-icon,
+  .contact-item:hover .item-icon {
+    background-color: var(--color-highlight) !important;
+
+    & > svg {
+      stroke: var(--color-background);
+    }
   }
 
   @media (min-width: 768px) {

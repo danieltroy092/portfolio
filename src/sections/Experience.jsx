@@ -30,7 +30,7 @@ export const Experience = () => {
           Front-end Developer{" "}
           <span>
             @{" "}
-            <a href="https://hoffi.com/" target="_blank">
+            <a className="link" href="https://hoffi.com/" target="_blank">
               Hoffi
             </a>
           </span>

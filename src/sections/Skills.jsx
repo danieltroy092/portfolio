@@ -108,7 +108,6 @@ export const Skills = () => {
           {frontend.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20"
-              tabIndex="0"
               key={i}
             >
               <img
@@ -134,7 +133,6 @@ export const Skills = () => {
           {backend.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer"
-              tabIndex="0"
               key={i}
             >
               <img
@@ -160,7 +158,6 @@ export const Skills = () => {
           {tools.map((skill, i) => (
             <li
               className="skill-item relative flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer"
-              tabIndex="0"
               key={i}
             >
               <img

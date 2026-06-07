@@ -34,7 +34,7 @@ export const Navbar = () => {
               >
                 <a
                   href={link.href}
-                  className="font-mono text-white  hover:text-primary focus:text-background"
+                  className="link font-mono text-white  hover:text-primary focus:text-background"
                 >
                   {link.label}
                 </a>
@@ -65,7 +65,7 @@ export const Navbar = () => {
               <a
                 href={link.href}
                 key={idx}
-                className="text-lg active:text-primary py-2"
+                className="link text-lg active:text-primary py-2"
               >
                 {link.label}
               </a>

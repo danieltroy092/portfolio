@@ -19,6 +19,7 @@ export const About = () => {
             Hello! I'm Troy from Newport, Wales. My passion for web development
             started in my early teenage years when I began tinkering with{" "}
             <a
+              className="link"
               href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
               target="_blank"
             >
@@ -33,7 +34,11 @@ export const About = () => {
             my interest to dive deeper, setting me on a path to a career in
             tech. It eventually led me to sign up for a Computer Science course
             at the{" "}
-            <a href="https://www.uwe.ac.uk/about" target="_blank">
+            <a
+              className="link"
+              href="https://www.uwe.ac.uk/about"
+              target="_blank"
+            >
               University of the West of England (UWE)
             </a>
             , where I graduated in 2019.
@@ -41,7 +46,11 @@ export const About = () => {
 
           <p className="mt-4">
             Fast-forward to today, where I've had the privilege of working for a{" "}
-            <a href="https://hoffi.com/who-we-are" target="_blank">
+            <a
+              className="link"
+              href="https://hoffi.com/who-we-are"
+              target="_blank"
+            >
               digital design agency
             </a>{" "}
             that allowed me to hone and improve my skills in building
