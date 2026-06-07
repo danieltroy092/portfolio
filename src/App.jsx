@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import { Navbar } from "@layout/Navbar";
+import { Footer } from "@layout/Footer";
 
 import { Hero } from "@sections/Hero";
 import { About } from "@sections/About";
@@ -29,6 +30,7 @@ export default function App() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
