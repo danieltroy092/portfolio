@@ -20,12 +20,12 @@ export const About = () => {
             started in my early teenage years when I began tinkering with{" "}
             <a
               className="link"
-              href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
+              href="https://en.wikipedia.org/wiki/Bebo"
               target="_blank"
             >
-              Bebo themes
+              Bebo skins
             </a>{" "}
-            to personalize my profile, aiming to show some creativity and
+            to personalise my profile, aiming to show some creativity and
             impress my friends.
           </p>
 

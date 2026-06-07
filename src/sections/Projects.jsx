@@ -11,7 +11,7 @@ const projectsData = [
     name: "Creativity Culture Education",
     image: "cce.webp",
     url: "https://creativitycultureeducation.org/",
-    text: "Built a for a UK non-profit organisation, involving a custom JS feature to better display data regarding the organisation partners along with an integrated mailing system streamlining communications between admin and users.",
+    text: "Built a for a UK non-profit organisation, involving a custom JS feature to improve representation of the organisation's partners along with an integrated mailing system streamlining communications between admin and users.",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const projectsData = [
     name: "Bextra",
     image: "bextra.webp",
     url: "https://bextra.cymru/",
-    text: "A bilingual website with a Welsh first approach created as a resource used within the Health and Wellbeing curriculum. Built with great emphasis on accurate translations to provide a good experience to user who are Welsh native speakers.",
+    text: "A bilingual website with a Welsh first approach created as a resource used within the Health and Wellbeing school curriculum. Built with great emphasis on accurate translations to provide a good experience to users who are Welsh native speakers.",
   },
 ];
 
