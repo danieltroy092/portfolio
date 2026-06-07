@@ -63,6 +63,8 @@ export const Hero = () => {
           </p>
         </div>
         <a
+          data-aos="fade-up"
+          data-aos-delay="1000"
           className="inline-block relative mt-8 py-2 px-6 font-mono text-sm font-semibold button gradient-button bordered"
           href="#contact"
         >

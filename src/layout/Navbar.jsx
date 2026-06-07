@@ -1,4 +1,5 @@
 import { Button } from "@components/Button";
+import myCV from "@assets/cv.pdf";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -37,7 +38,11 @@ export const Navbar = () => {
               </li>
             ))}
           </ol>
-          <Button className="text-xs">Download CV</Button>
+          <Button className="text-xs">
+            <a href={myCV} target="_blank">
+              Download CV
+            </a>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -64,7 +69,11 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button>Download CV</Button>
+            <Button>
+              <a href={myCV} target="_blank">
+                Download CV
+              </a>
+            </Button>
           </div>
         </div>
       )}
