@@ -1,9 +1,6 @@
 export const Footer = () => {
   return (
-    <footer
-      data-aos="fade-up"
-      className="footer text-xs font-mono text-center p-4 overflow-hidden"
-    >
+    <footer className="footer text-xs font-mono text-center p-4 overflow-hidden">
       <p>&copy; {new Date().getFullYear()} Troy Ong. All rights reserved.</p>
       <p>
         Built with{" "}
