@@ -67,10 +67,10 @@ export const Projects = () => {
                   <span className="block font-mono text-highlight text-xs">
                     Featured Project
                   </span>
-                  <h3 className="inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">
+                  <h3 className="project-title inline-block mt-2 text-2xl hover:text-primary font-calibre-bold">
                     {project.name}
                   </h3>
-                  <p className="block mt-2 md:p-4 leading-relaxed sm:bg-(--color-surface) text-sm text-pretty">
+                  <p className="block mt-2 md:p-4 leading-relaxed text-white sm:bg-(--color-surface) text-sm text-pretty">
                     {project.text}
                   </p>
                 </div>

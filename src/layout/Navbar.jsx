@@ -1,4 +1,4 @@
-import { Button } from "@components/Button";
+import { ButtonLink } from "@components/Button-link";
 import myCV from "@assets/cv.pdf";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -32,17 +32,18 @@ export const Navbar = () => {
                 className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs"
                 key={i}
               >
-                <a href={link.href} className="font-mono  hover:text-primary">
+                <a
+                  href={link.href}
+                  className="font-mono text-white  hover:text-primary focus:text-background"
+                >
                   {link.label}
                 </a>
               </li>
             ))}
           </ol>
-          <Button className="text-xs">
-            <a href={myCV} target="_blank">
-              Download CV
-            </a>
-          </Button>
+          <ButtonLink href={myCV} size="sm">
+            Download CV
+          </ButtonLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -69,11 +70,9 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button>
-              <a href={myCV} target="_blank">
-                Download CV
-              </a>
-            </Button>
+            <ButtonLink href={myCV} size="sm">
+              Download CV
+            </ButtonLink>
           </div>
         </div>
       )}

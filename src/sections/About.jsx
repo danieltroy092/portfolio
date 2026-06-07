@@ -21,7 +21,6 @@ export const About = () => {
             <a
               href="https://www.webdesignmuseum.org/gallery/bebo-in-2008"
               target="_blank"
-              className="text-primary"
             >
               Bebo themes
             </a>{" "}
@@ -34,11 +33,7 @@ export const About = () => {
             my interest to dive deeper, setting me on a path to a career in
             tech. It eventually led me to sign up for a Computer Science course
             at the{" "}
-            <a
-              href="https://www.uwe.ac.uk/about"
-              target="_blank"
-              className="text-primary"
-            >
+            <a href="https://www.uwe.ac.uk/about" target="_blank">
               University of the West of England (UWE)
             </a>
             , where I graduated in 2019.
@@ -46,11 +41,7 @@ export const About = () => {
 
           <p className="mt-4">
             Fast-forward to today, where I've had the privilege of working for a{" "}
-            <a
-              href="https://hoffi.com/who-we-are"
-              target="_blank"
-              className="text-primary"
-            >
+            <a href="https://hoffi.com/who-we-are" target="_blank">
               digital design agency
             </a>{" "}
             that allowed me to hone and improve my skills in building

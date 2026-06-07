@@ -28,7 +28,7 @@ export const Experience = () => {
           className="text-xl  font-calibre-bold"
         >
           Front-end Developer{" "}
-          <span className="text-primary">
+          <span>
             @{" "}
             <a href="https://hoffi.com/" target="_blank">
               Hoffi

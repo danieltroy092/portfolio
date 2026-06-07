@@ -1,4 +1,5 @@
 import { Button } from "@components/Button";
+import { ButtonLink } from "../components/Button-link";
 
 export const Hero = () => {
   return (
@@ -59,17 +60,20 @@ export const Hero = () => {
           <p className="text-lg text-pretty">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
-            <a>Drupal CMS</a>.
+            <a href="https://new.drupal.org/home" target="_blank">
+              Drupal CMS
+            </a>
+            .
           </p>
         </div>
-        <a
+        <ButtonLink
           data-aos="fade-up"
           data-aos-delay="1000"
-          className="inline-block relative mt-8 py-2 px-6 font-mono text-sm font-semibold button gradient-button bordered"
+          className="inline-block mt-8 py-2 px-6 font-semibold gradient-button bordered"
           href="#contact"
         >
           Get in Touch
-        </a>{" "}
+        </ButtonLink>
       </div>
     </section>
   );
