@@ -17,11 +17,12 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 py-5 z-50 bg-background sm:bg-transparent">
       <nav className="container mx-auto px-6 flex justify-between">
-        <a
-          href="#"
-          className="text-xl font-mono tracking-tight hover:text-primary"
-        >
-          {`<Troy />`}
+        <a href="/" className="outline-none">
+          <img
+            src={"logo.webp"}
+            className="size-[50px]"
+            alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
+          ></img>
         </a>
 
         {/* Desktop Nav */}
