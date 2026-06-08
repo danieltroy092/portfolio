@@ -88,7 +88,7 @@ export const Contact = () => {
 
         <div className="max-w-lg mx-auto">
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
             className="glass p-8 rounded-3xl border border-primary/30"
           >

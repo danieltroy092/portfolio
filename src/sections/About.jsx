@@ -23,9 +23,9 @@ export const About = () => {
               href="https://en.wikipedia.org/wiki/Bebo"
               target="_blank"
             >
-              Bebo skins
+              Bebo
             </a>{" "}
-            to personalise my profile, aiming to show some creativity and
+            skins to personalise my profile, aiming to show some creativity and
             impress my friends.
           </p>
 

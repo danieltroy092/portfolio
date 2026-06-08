@@ -132,7 +132,7 @@ export const Skills = () => {
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill, i) => (
             <li
-              className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20 cursor-pointer"
+              className="skill-item relative flex items-center shrink-0 grow-0 basis-30 sm:basis-20"
               key={i}
             >
               <img
@@ -157,7 +157,7 @@ export const Skills = () => {
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill, i) => (
             <li
-              className="skill-item relative flex items-center shrink-0 basis-30 sm:basis-20 cursor-pointer"
+              className="skill-item relative flex items-center shrink-0 basis-30 sm:basis-20"
               key={i}
             >
               <img
