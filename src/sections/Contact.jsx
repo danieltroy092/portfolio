@@ -1,28 +1,7 @@
-import { Mail, Phone, MapPin, CheckCircle, AlertCircle } from "lucide-react";
+import { CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-
-const contactData = [
-  {
-    icon: Mail,
-    label: "email",
-    value: "danieltroy092@gmail.com",
-    href: "mailto:danieltroy092@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+447737 240210",
-    href: "tel:+447737240210",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Newport, Wales",
-    href: "https://maps.app.goo.gl/Ku1jYPb2Npsz62o86",
-  },
-];
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -107,13 +86,28 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="max-w-lg mx-auto">
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
             className="glass p-8 rounded-3xl border border-primary/30"
           >
-            <form className="form space-y-6" onSubmit={handleSubmit}>
+            <div className="glass rounded-3xl p-8 border border-primary/30">
+              {" "}
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                <span className="font-mono text-xs text-primary">
+                  Currently Available
+                </span>
+              </div>
+              <p className="text-sm text-pretty">
+                I'm currently seeking new opportunities and exciting projects.
+                If you're looking for a full-time developer or a freelance
+                consultant, feel free to reach out!
+              </p>
+            </div>
+
+            <form className="form space-y-6 mt-8" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name" className="block text-xs font-mono mb-2">
                   Name
@@ -196,53 +190,6 @@ export const Contact = () => {
                 </div>
               )}
             </form>
-          </div>
-
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            className="space-y-6"
-          >
-            <div className="glass rounded-3xl p-8">
-              <h3 className="text-xl font-semibold mb-6">
-                Contact Information
-              </h3>
-
-              <div className="contact space-y-4">
-                {contactData.map((item, i) => (
-                  <a
-                    key={i}
-                    href={item.href}
-                    className="contact-item flex items-center gap-4 p-4 rounded-xl hover:bg-surface focus:outline-none transition-colors group"
-                  >
-                    <div className="item-icon w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <item.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-primary font-mono">
-                        {item.label}
-                      </div>
-                      <div className="font-medium">{item.value}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-
-              <div className="glass rounded-3xl p-8 border border-primary/30 mt-8">
-                {" "}
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="font-mono text-xs text-primary">
-                    Currently Available
-                  </span>
-                </div>
-                <p className="text-sm text-pretty">
-                  I'm currently seeking new opportunities and exciting projects.
-                  If you're looking for a full-time developer or a freelance
-                  consultant, feel free to reach out!
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

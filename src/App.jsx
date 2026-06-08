@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import { Navbar } from "@layout/Navbar";
 import { Footer } from "@layout/Footer";
+import { Socials } from "@layout/Socials";
 
 import { Hero } from "@sections/Hero";
 import { About } from "@sections/About";
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
+      <Socials />
       <main>
         <Hero />
         <About />

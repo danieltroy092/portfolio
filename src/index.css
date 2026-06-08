@@ -452,6 +452,21 @@
     }
   }
 
+  .social-link svg {
+    width: 100%;
+    height: auto;
+    fill: var(--color-foreground);
+    max-width: 20px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .social-link:hover svg,
+  .social-link:active svg,
+  .social-link:focus-visible svg {
+    transform: translateY(-4px);
+    fill: var(--color-highlight);
+  }
+
   @media (min-width: 1024px) {
     .project-image::after {
       mix-blend-mode: color;
