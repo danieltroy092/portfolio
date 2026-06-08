@@ -44,7 +44,7 @@ export const Navbar = () => {
               </li>
             ))}
           </ol>
-          <ButtonLink href={myCV} size="sm">
+          <ButtonLink className="font-semibold" href={myCV} size="sm">
             Download CV
           </ButtonLink>
         </div>

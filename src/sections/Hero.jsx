@@ -73,7 +73,7 @@ export const Hero = () => {
         <ButtonLink
           data-aos="fade-up"
           data-aos-delay="1000"
-          className="inline-block mt-8 py-2 px-6 hover:text-background gradient-button bordered"
+          className="inline-block mt-8 py-2 px-6 hover:text-background gradient-button bordered hover:font-semibold focus:font-semibold"
           href="#contact"
         >
           Get in Touch

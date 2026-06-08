@@ -90,13 +90,13 @@ export const Contact = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="glass p-8 rounded-3xl border border-primary/30"
+            className="glass p-8 rounded-3xl border border-primary/40 glow-border"
           >
-            <div className="glass rounded-3xl p-8 border border-primary/30">
+            <div className="glass rounded-3xl p-8 border border-primary/10">
               {" "}
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                <span className="font-mono text-xs text-primary">
+                <span className="font-mono text-xs text-primary font-semibold">
                   Currently Available
                 </span>
               </div>

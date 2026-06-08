@@ -5,7 +5,7 @@ export const Footer = () => {
       <p>
         Built with{" "}
         <a
-          className="text-muted-foreground active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
+          className="text-primary active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
           href="https://react.dev/learn"
           target="_blank"
         >
@@ -13,7 +13,7 @@ export const Footer = () => {
         </a>
         ,{" "}
         <a
-          className="text-muted-foreground active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
+          className="text-primary active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
           href="https://vite.dev/"
           target="_blank"
         >
@@ -21,7 +21,7 @@ export const Footer = () => {
         </a>{" "}
         &{" "}
         <a
-          className="text-muted-foreground active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
+          className="text-primary active:text-highlight hover:text-highlight focus-visible:text-background focus-visible:bg-highlight outline-none"
           href="https://tailwindcss.com/"
           target="_blank"
         >
