@@ -467,6 +467,16 @@
     fill: var(--color-highlight);
   }
 
+  @media (min-width: 1536px) {
+    .vertical-accent::after {
+      display: block;
+      content: "";
+      width: 1px;
+      height: 100px;
+      background-color: var(--color-muted-surface);
+    }
+  }
+
   @media (min-width: 1024px) {
     .project-image::after {
       mix-blend-mode: color;

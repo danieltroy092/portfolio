@@ -29,13 +29,13 @@ const socialsData = [
 export const Socials = () => {
   return (
     <div className="socials fixed bottom-0 left-20 z-10 right-auto">
-      <ul className="socials-list flex flex-col gap-2">
+      <ul className="socials-list flex items-center flex-col gap-5 vertical-accent">
         {" "}
         {socialsData.map((social, i) => (
-          <li className="social-item size-[40px]" key={i}>
+          <li className="social-item size-[20px]" key={i}>
             <a
               href={social.url}
-              className="social-link block outline-none"
+              className="social-link block outline-none m-auto"
               target="_blank"
               aria-label={`An external link leading to ${social.name} website.`}
             >
