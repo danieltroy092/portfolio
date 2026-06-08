@@ -103,7 +103,7 @@ export const Skills = () => {
         data-aos-duration="1000"
         className="skill-group mt-12"
       >
-        <h3 className="font-mono text-primary">FRONTEND</h3>
+        <h3 className="font-mono text-highlight">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {frontend.map((skill, i) => (
             <li
@@ -128,7 +128,7 @@ export const Skills = () => {
         data-aos-duration="1000"
         className="skill-group mt-12"
       >
-        <h3 className="font-mono text-primary">BACKEND</h3>
+        <h3 className="font-mono text-highlight">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {backend.map((skill, i) => (
             <li
@@ -153,7 +153,7 @@ export const Skills = () => {
         data-aos-duration="1000"
         className="skill-group mt-12"
       >
-        <h3 className="font-mono text-primary">TOOLS</h3>
+        <h3 className="font-mono text-highlight">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 justify-center md:justify-start">
           {tools.map((skill, i) => (
             <li
