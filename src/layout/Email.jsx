@@ -1,6 +1,6 @@
 export const Email = () => {
   return (
-    <div className="fixed bottom-0 right-20 left-auto z-10">
+    <div className="hidden min-[1536px]:block fixed bottom-0 right-20 left-auto z-10">
       <div className="vertical-accent flex flex-col items-center">
         <a
           className="font-mono text-xs vertical-rl tracking-widest mb-5 hover:text-highlight focus-visible:text-highlight outline-none"
