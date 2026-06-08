@@ -24,8 +24,8 @@ export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
-      <Socials />
       <Email />
+      <Socials />
       <main>
         <Hero />
         <About />
