@@ -485,6 +485,10 @@
 }
 
 @layer utilities {
+  .vertical-rl {
+    writing-mode: vertical-rl;
+  }
+
   @keyframes fade-in {
     from {
       opacity: 0;
