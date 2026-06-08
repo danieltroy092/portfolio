@@ -28,7 +28,7 @@ const socialsData = [
 
 export const Socials = () => {
   return (
-    <div className="socials hidden min-[1536px]:block fixed bottom-0 left-20 z-10 right-auto">
+    <div className="socials hidden min-[1536px]:block fixed bottom-0 left-8 z-10 right-auto">
       <ul className="socials-list flex items-center flex-col gap-5 vertical-accent">
         {" "}
         {socialsData.map((social, i) => (
