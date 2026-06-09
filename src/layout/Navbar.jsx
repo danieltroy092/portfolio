@@ -19,6 +19,7 @@ export const Navbar = () => {
       <nav className="container mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
+            data-aos="fade-down"
             src={"logo.webp"}
             className="size-[50px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
@@ -26,10 +27,12 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div data-aos="fade-down" className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
+                data-aos="fade-down"
+                data-aos-delay={i * 100}
                 className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs"
                 key={i}
               >
@@ -42,7 +45,13 @@ export const Navbar = () => {
               </li>
             ))}
           </ol>
-          <ButtonLink className="font-semibold" href={myCV} size="sm">
+          <ButtonLink
+            data-aos="fade-down"
+            data-aos-delay="600"
+            className="font-semibold"
+            href={myCV}
+            size="sm"
+          >
             Download CV
           </ButtonLink>
         </div>
