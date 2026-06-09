@@ -12,7 +12,7 @@ const expData = [
 
 export const Experience = () => {
   return (
-    <section className="about-content container relative lg:w-4/5 2xl:w-3/5 m-auto px-4 py-4 mt-48">
+    <section className="about-content container relative max-w-(--wrapper-base) m-auto px-6 mt-24 sm:mt-48">
       <h2 data-aos="fade-up" className="text-2xl font-semibold">
         <a id="experience" className="text-primary font-mono text-lg">
           03.
@@ -48,10 +48,10 @@ export const Experience = () => {
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
-          className="mt-6 list-custom p-5"
+          className="mt-6 list-custom"
         >
           {expData.map((data, i) => (
-            <li className="relative leading-loose" key={i}>
+            <li className="relative leading-loose text-pretty" key={i}>
               {data}
             </li>
           ))}

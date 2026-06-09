@@ -16,7 +16,7 @@ export const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 py-5 z-50 bg-background">
-      <nav className="container mx-auto px-6 flex justify-between">
+      <nav className="mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
             data-aos="fade-down"
@@ -52,6 +52,7 @@ export const Navbar = () => {
             className="font-semibold"
             href={myCV}
             size="sm"
+            target="_blank"
           >
             Download CV
           </ButtonLink>

@@ -33,7 +33,7 @@ const projectsData = [
 
 export const Projects = () => {
   return (
-    <section className="skills-content relative container 2xl:w-1/2 m-auto px-6 py-4 mt-48">
+    <section className="skills-content relative max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
       <h2 data-aos="fade-up" className="text-2xl font-semibold">
         <a id="projects" className="text-primary font-mono text-lg">
           04.
@@ -62,15 +62,15 @@ export const Projects = () => {
                   <img src={project.image} alt={project.name} />
                 </span>
                 <div
-                  className={`project-content relative ${(i + 1) % 2 === 1 ? "md:text-right" : ""}`}
+                  className={`project-content relative ${(i + 1) % 2 === 1 ? "sm:text-right" : ""}`}
                 >
-                  <span className="block font-mono text-primary text-xs">
+                  <span className="project-label block font-mono text-highlight sm:text-primary text-xs">
                     Featured Project
                   </span>
                   <h3 className="project-title inline-block mt-2 text-2xl font-calibre-bold">
                     {project.name}
                   </h3>
-                  <p className="project-summary block mt-2 md:p-4 leading-relaxed text-white sm:bg-(--color-surface) text-sm text-pretty">
+                  <p className="project-summary block mt-2 sm:p-4 leading-relaxed text-white sm:bg-(--color-surface) text-lg sm:text-[18px] text-pretty">
                     {project.text}
                   </p>
                 </div>

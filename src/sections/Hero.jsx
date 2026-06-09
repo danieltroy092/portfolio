@@ -32,7 +32,7 @@ export const Hero = () => {
       </div>
 
       {/** Content */}
-      <div className="hero-content relative container m-auto px-6 py-6 2xl:w-3/5">
+      <div className="hero-content relative container m-auto p-6 sm:max-w-[70vw]">
         <h1>
           <span data-aos="fade-up" className="block md:text-lg font-mono">
             Hi, my name is
@@ -47,7 +47,7 @@ export const Hero = () => {
           <span
             data-aos="fade-up"
             data-aos-delay="600"
-            className="block text-4xl md:text-6xl mt-2 font-calibre-bold gradient-text"
+            className="block text-4xl md:text-6xl mt-2 font-calibre-bold gradient-text text-balance"
           >
             I build things for the web.
           </span>

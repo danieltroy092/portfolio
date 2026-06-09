@@ -1,21 +1,21 @@
 export const About = () => {
   return (
-    <section className="profile-content relative container 2xl:w-3/5 m-auto px-6 py-4">
+    <section className="profile-content relative p-6 max-w-(--wrapper-base) m-auto">
       <h2 data-aos="fade-right" className="py-6 text-2xl font-semibold">
         <a id="about" className="text-primary font-mono text-lg">
           01.
         </a>{" "}
         <span className="section-title relative">About Me</span>
       </h2>
-      <div className="profile-text flex flex-col-reverse items-center gap-12 container lg:flex-row lg:items-start">
+      <div className="profile-text flex flex-col-reverse items-center gap-10 container sm:flex-row sm:items-start">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          className="xl:w-1/2"
+          className="sm:basis-[50%]"
         >
           <p></p>
 
-          <p className="mt-4">
+          <p className="mt-4 text-pretty">
             Hello! I'm Troy from Newport, Wales. My passion for web development
             started in my early teenage years when I began tinkering with{" "}
             <a
@@ -29,7 +29,7 @@ export const About = () => {
             impress my friends.
           </p>
 
-          <p className="mt-4">
+          <p className="mt-4 text-pretty">
             That experience taught me a lot about HTML and CSS, and it sparked
             my interest to dive deeper, setting me on a path to a career in
             tech. It eventually led me to sign up for a Computer Science course
@@ -44,7 +44,7 @@ export const About = () => {
             , where I graduated in 2019.
           </p>
 
-          <p className="mt-4">
+          <p className="mt-4 text-pretty">
             Fast-forward to today, where I've had the privilege of working for a{" "}
             <a
               className="link"
@@ -61,13 +61,13 @@ export const About = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="relative xl:w-1/2 "
+          className="relative sm:basis-[50%] "
         >
           <span
-            className="profile-image block relative"
+            className="profile-image block relative size-[200px] sm:size-[280px]  rounded-sm brightness-80"
             aria-label="a portrait image of Troy; a south east asian man with brown skin, dark hair and goatee"
           ></span>
-          <span className="profile-image--accent"></span>
+          <span className="profile-image--accent absolute inset-[0] z-[-2] size-[200px] sm:size-[280px] border-3 border-solid border-(--color-primary) rounded-sm"></span>
         </div>
       </div>
     </section>

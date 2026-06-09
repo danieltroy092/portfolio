@@ -16,7 +16,7 @@ export const ButtonLink = ({
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
 
   return (
-    <a className={classes} {...props} target="_blank">
+    <a className={classes} {...props}>
       <span className="relative flex items-center justify-center cursor-pointer">
         {children}
       </span>

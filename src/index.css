@@ -25,6 +25,15 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 768px; /* 768 */
+  --breakpoint-md: 1024px; /* 1024 */
+  --breakpoint-lg: 1366px; /* 1366 */
+
+  --wrapper-max: 1366px;
+  --wrapper-base: 1024px;
+  --wrapper-sm: 800px;
+
   --color-background: #0f1418;
   --color-foreground: #f0f2f5;
 
@@ -53,7 +62,10 @@
   html {
     scroll-behavior: smooth;
     scroll-padding: 200px;
-    font-size: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   body {
@@ -318,17 +330,13 @@
   }
 
   .profile-image {
-    width: 300px;
-    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("/profile-photo.webp");
     background-color: var(--color-primary);
     background-blend-mode: luminosity;
-    filter: brightness(80%);
-    border-radius: var(--radius-small);
-    transition: all 250ms ease;
+    transition: all 200ms ease;
 
     &:hover {
       background-blend-mode: normal;
@@ -337,19 +345,12 @@
   }
 
   .profile-image--accent {
-    inset: 0;
-    z-index: -2;
-    border: 3px solid var(--color-primary);
-    position: absolute;
-    transform: translate(18px, 18px);
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: var(--radius-small);
-    transition: all 250ms ease;
+    transform: translate(14px, 14px);
+    transition: all 200ms ease;
   }
 
   .profile-image:hover + .profile-image--accent {
-    transform: translate(22px, 22px);
+    transform: translate(18px, 18px);
   }
 
   .project-image {
@@ -424,34 +425,6 @@
     }
   }
 
-  @media (min-width: 768px) {
-    .section-title::after {
-      display: inline-block;
-      content: "";
-      width: 300px;
-      height: 1px;
-      background-color: var(--color-muted-surface);
-      vertical-align: middle;
-      margin-left: 20px;
-    }
-
-    .project-image {
-      grid-area: 1/1/-1/8;
-    }
-    .project-content {
-      grid-area: 1/6/-1/-1;
-    }
-
-    .reverse .project-image {
-      grid-area: 1/6/-1/14;
-    }
-
-    .reverse .project-content {
-      text-align: left;
-      grid-area: 1/1/-1/8;
-    }
-  }
-
   .social-link svg {
     width: 100%;
     height: auto;
@@ -467,6 +440,39 @@
     fill: var(--color-highlight);
   }
 
+  @media (min-width: 768px) {
+    .section-title::after {
+      display: inline-block;
+      content: "";
+      width: 300px;
+      height: 1px;
+      background-color: var(--color-muted-surface);
+      vertical-align: middle;
+      margin-left: 20px;
+    }
+
+    .project-image {
+      grid-area: 1/1/-1/8;
+    }
+
+    .project-content {
+      grid-area: 1/6/-1/-1;
+    }
+
+    .reverse .project-image {
+      grid-area: 1/6/-1/14;
+    }
+
+    .reverse .project-content {
+      text-align: left;
+      grid-area: 1/1/-1/8;
+    }
+
+    .project-image::after {
+      mix-blend-mode: color;
+    }
+  }
+
   @media (min-width: 1536px) {
     .vertical-accent::after {
       display: block;
@@ -477,13 +483,11 @@
     }
   }
 
-  @media (min-width: 1024px) {
-    .project-image::after {
-      mix-blend-mode: color;
-    }
-  }
-
   @media (max-width: 768px) {
+    .project-title {
+      color: var(--color-primary);
+    }
+
     .project-content {
       box-sizing: border-box;
       background-color: rgba(26, 35, 41, 0.9);
