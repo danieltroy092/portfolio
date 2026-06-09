@@ -20,6 +20,7 @@ export const Navbar = () => {
         <a href="/" className="outline-none">
           <img
             data-aos="fade-down"
+            data-aos-duration="1000"
             src={"logo.webp"}
             className="size-[50px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
