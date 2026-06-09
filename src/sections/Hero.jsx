@@ -57,7 +57,7 @@ export const Hero = () => {
           data-aos-delay="800"
           className="flex mt-4 lg:w-1/2"
         >
-          <p className="text-lg text-pretty">
+          <p className="text-lg text-pretty max-w-[500px]">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
             <a
