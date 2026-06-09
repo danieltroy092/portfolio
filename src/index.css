@@ -52,7 +52,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding: 100px;
+    scroll-padding: 200px;
     font-size: 20px;
   }
 
