@@ -15,7 +15,7 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 py-5 z-50 bg-background sm:bg-transparent">
+    <header className="fixed top-0 left-0 right-0 py-5 z-50 bg-background">
       <nav className="container mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
@@ -26,10 +26,7 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-        <div
-          data-aos="fade-down"
-          className="hidden lg:flex bg-background items-center gap-1"
-        >
+        <div data-aos="fade-down" className="hidden lg:flex items-center gap-1">
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
