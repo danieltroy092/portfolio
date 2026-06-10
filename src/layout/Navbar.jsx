@@ -93,7 +93,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
+          className={`toggle relative flex p-1 bg-background text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
           onClick={updateMenu}
           aria-label="toggle button for menu"
         >
