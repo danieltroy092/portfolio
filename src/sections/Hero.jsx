@@ -40,14 +40,14 @@ export const Hero = () => {
           <span
             data-aos="fade-up"
             data-aos-delay="300"
-            className="block text-4xl md:text-6xl mt-4 font-calibre-bold gradient-text"
+            className="block text-5xl md:text-6xl mt-4 font-calibre-bold gradient-text"
           >
             Daniel Troy Ong.
           </span>
           <span
             data-aos="fade-up"
             data-aos-delay="600"
-            className="block text-4xl md:text-6xl mt-2 font-calibre-bold gradient-text text-balance"
+            className="block text-5xl md:text-6xl mt-2 font-calibre-bold gradient-text text-balance"
           >
             I build things for the web.
           </span>

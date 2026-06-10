@@ -53,7 +53,7 @@ export const Navbar = () => {
         <a href="/" className="outline-none">
           <img
             data-aos="fade-down"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             src={"logo.webp"}
             className="size-[40px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
@@ -118,6 +118,10 @@ export const Navbar = () => {
                   <a
                     href={link.href}
                     className="text-lg  py-2 font-mono text-sm hover:text-highlight focus-visible:bg-highlight focus-visible:text-background outline-none"
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setBurgerClass("burger-bar");
+                    }}
                   >
                     {link.label}
                   </a>
