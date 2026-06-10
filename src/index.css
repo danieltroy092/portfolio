@@ -164,13 +164,19 @@
     font-family: "Fira Code", monospace;
   }
 
-  .burger-icon {
-    background-color: var(--color-foreground);
-    transform: translate(0, 13px);
-    transition: transform 200ms ease-in-out;
+  .toggle:hover .toggle-icon,
+  .toggle:hover .toggle-icon::before,
+  .toggle:hover .toggle-icon::after {
+    background-color: var(--color-highlight);
   }
 
-  .burger-icon::before {
+  .toggle-icon {
+    background-color: var(--color-foreground);
+    transform: translate(0, 13px);
+    transition: transform 200ms ease-in;
+  }
+
+  .toggle-icon::before {
     display: block;
     content: "";
     width: 100%;
@@ -180,7 +186,7 @@
     top: -12px;
   }
 
-  .burger-icon::after {
+  .toggle-icon::after {
     display: block;
     content: "";
     width: 100%;
@@ -190,16 +196,19 @@
     top: 12px;
   }
 
-  .burger-icon.clicked {
+  .toggle-icon.clicked,
+  .toggle:hover .toggle-icon.clicked {
     background-color: transparent;
   }
 
-  .burger-icon.clicked::before {
+  .toggle-icon.clicked::before {
     transform: translate(0, 12px) rotate(50deg);
+    transition: transform 200ms ease-out;
   }
 
-  .burger-icon.clicked::after {
+  .toggle-icon.clicked::after {
     transform: translate(0, -12px) rotate(-50deg);
+    transition: transform 200ms ease-out;
   }
 
   .button {

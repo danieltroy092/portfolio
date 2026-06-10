@@ -95,12 +95,12 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`relative flex p-1 text-foreground cursor-pointer w-8 h-8 block ${showToggle ? "" : "lg:hidden"}`}
+          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 block ${showToggle ? "" : "lg:hidden"}`}
           onClick={updateMenu}
           aria-label="toggle button for menu"
         >
           <span
-            className={`burger-icon block relative w-[32px] h-[2px]  mb-2 ${burger_class}`}
+            className={`toggle-icon block relative w-[32px] h-[2px]  mb-2 ${burger_class}`}
           ></span>
         </button>
       </nav>
