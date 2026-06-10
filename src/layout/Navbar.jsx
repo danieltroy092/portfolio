@@ -46,9 +46,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 py-5 z-50 ${isMobileMenuOpen ? "bg-background" : "bg-transparent"}`}
-    >
+    <header className={`fixed top-0 left-0 right-0 py-5 z-50`}>
       <nav className="mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
@@ -95,7 +93,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 block ${showToggle ? "" : "lg:hidden"}`}
+          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
           onClick={updateMenu}
           aria-label="toggle button for menu"
         >
@@ -108,18 +106,21 @@ export const Navbar = () => {
       {/* Mobile Menu */}
 
       {isMobileMenuOpen && (
-        <div className="bg-background animate-fade-in">
-          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
-            {navLinks.map((link, idx) => (
-              <a
-                href={link.href}
-                key={idx}
-                className="link text-lg active:text-primary py-2"
-              >
-                {link.label}
-              </a>
-            ))}
-            <ButtonLink href={myCV} size="sm">
+        <div className="toggle-menu bg-background border border-primary/40 glow-border">
+          <div className="container p-6">
+            <ul className="toggle-menu-list flex flex-col gap-5">
+              {navLinks.map((link, idx) => (
+                <li className="toggle-list-item" key={idx}>
+                  <a
+                    href={link.href}
+                    className="text-lg  py-2 font-mono text-sm hover:text-highlight focus-visible:bg-highlight focus-visible:text-background outline-none"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ButtonLink className="block mt-6" href={myCV} size="sm">
               Download CV
             </ButtonLink>
           </div>

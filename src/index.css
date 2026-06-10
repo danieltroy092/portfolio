@@ -176,6 +176,12 @@
     transition: transform 200ms ease-in;
   }
 
+  .toggle:focus-visible .toggle-icon,
+  .toggle:focus-visible .toggle-icon::before,
+  .toggle:focus-visible .toggle-icon::after {
+    background-color: var(--color-background);
+  }
+
   .toggle-icon::before {
     display: block;
     content: "";
@@ -197,7 +203,8 @@
   }
 
   .toggle-icon.clicked,
-  .toggle:hover .toggle-icon.clicked {
+  .toggle:hover .toggle-icon.clicked,
+  .toggle:focus-visible .toggle-icon.clicked {
     background-color: transparent;
   }
 
@@ -209,6 +216,33 @@
   .toggle-icon.clicked::after {
     transform: translate(0, -12px) rotate(-50deg);
     transition: transform 200ms ease-out;
+  }
+
+  .toggle-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    padding-top: 100px;
+    overflow-x: hidden;
+  }
+
+  .toggle-menu-list {
+    counter-reset: listStyle;
+  }
+
+  .toggle-list-item {
+    counter-increment: listStyle;
+  }
+
+  .toggle-list-item::before {
+    margin-right: 3px;
+    font-family: "Fira Code";
+    font-size: 0.65rem;
+    color: var(--color-primary);
+    content: counter(listStyle, decimal-leading-zero) ".";
   }
 
   .button {
@@ -587,6 +621,15 @@
 
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 250px;
     }
   }
 
