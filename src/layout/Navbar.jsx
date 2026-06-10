@@ -60,7 +60,7 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div
-          className={`lg:flex items-center gap-1  ${showToggle ? "lg:hidden" : ""}`}
+          className={`hidden lg:flex items-center gap-1  ${showToggle ? "lg:hidden" : ""}`}
         >
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
