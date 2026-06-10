@@ -46,14 +46,16 @@ export const Navbar = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 py-5 z-50`}>
+    <header
+      className={`fixed top-0 left-0 right-0 py-4 z-50 max-sm:bg-background/75`}
+    >
       <nav className="mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
             data-aos="fade-down"
             data-aos-duration="1000"
             src={"logo.webp"}
-            className="bg-background size-[50px]"
+            className="size-[40px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
           ></img>
         </a>
@@ -93,7 +95,9 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`toggle relative flex p-1 bg-background text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
+          data-aos="fade-left"
+          data-aos-duration="500"
+          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
           onClick={updateMenu}
           aria-label="toggle button for menu"
         >
