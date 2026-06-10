@@ -53,7 +53,7 @@ export const Navbar = () => {
             data-aos="fade-down"
             data-aos-duration="1000"
             src={"logo.webp"}
-            className="size-[50px]"
+            className="bg-background size-[50px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
           ></img>
         </a>
@@ -108,7 +108,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="toggle-menu bg-background border border-primary/40 glow-border">
           <div className="container p-6">
-            <ul className="toggle-menu-list flex flex-col gap-5">
+            <ul className="toggle-menu-list flex flex-col gap-8">
               {navLinks.map((link, idx) => (
                 <li className="toggle-list-item" key={idx}>
                   <a
@@ -120,7 +120,12 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <ButtonLink className="block mt-6" href={myCV} size="sm">
+            <ButtonLink
+              className="block mt-10"
+              href={myCV}
+              size="sm"
+              target="_blank"
+            >
               Download CV
             </ButtonLink>
           </div>
