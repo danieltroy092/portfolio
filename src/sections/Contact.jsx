@@ -69,7 +69,7 @@ export const Contact = () => {
       </div>
 
       <div className="container mx-auto relative px-6 z-10">
-        <div data-aos="fade-up" className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <span
             id="contact"
             className="text-secondary-foreground font-mono tracking-tight"
@@ -87,11 +87,7 @@ export const Contact = () => {
         </div>
 
         <div className="max-w-lg mx-auto">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="glass p-8 rounded-3xl border border-primary/40 glow-border"
-          >
+          <div className="glass p-8 rounded-3xl border border-primary/40 glow-border">
             <div className="glass rounded-3xl p-8 border border-primary/10">
               {" "}
               <div className="flex items-center gap-3 mb-4">

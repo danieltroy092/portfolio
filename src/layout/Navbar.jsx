@@ -49,8 +49,6 @@ export const Navbar = () => {
       <nav className="mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
           <img
-            data-aos="fade-down"
-            data-aos-duration="500"
             src={"logo.webp"}
             className="size-[40px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
@@ -65,8 +63,6 @@ export const Navbar = () => {
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
-                data-aos="fade-down"
-                data-aos-delay={i * 100}
                 className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs"
                 key={i}
               >
@@ -80,8 +76,6 @@ export const Navbar = () => {
             ))}
           </ol>
           <ButtonLink
-            data-aos="fade-down"
-            data-aos-delay="600"
             className="font-semibold"
             href={myCV}
             size="sm"
@@ -93,8 +87,6 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          data-aos="fade-left"
-          data-aos-duration="500"
           className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
           onClick={updateMenu}
           aria-label="toggle button for menu"

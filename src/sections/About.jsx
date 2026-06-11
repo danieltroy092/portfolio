@@ -1,18 +1,14 @@
 export const About = () => {
   return (
     <section className="profile-content relative p-6 max-w-(--wrapper-base) m-auto">
-      <h2 data-aos="fade-right" className="py-6 text-2xl font-semibold">
+      <h2 className="py-6 text-2xl font-semibold">
         <a id="about" className="text-primary font-mono text-lg">
           01.
         </a>{" "}
         <span className="section-title relative">About Me</span>
       </h2>
       <div className="profile-text flex flex-col-reverse items-center gap-10 container sm:flex-row sm:items-start">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          className="sm:basis-[50%]"
-        >
+        <div className="sm:basis-[50%]">
           <p></p>
 
           <p className="mt-4 text-pretty">
@@ -58,11 +54,7 @@ export const About = () => {
             for the world wide web.
           </p>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          className="relative sm:basis-[50%] "
-        >
+        <div className="relative sm:basis-[50%] ">
           <span
             className="profile-image block relative size-[200px] sm:size-[280px]  rounded-sm brightness-80"
             aria-label="a portrait image of Troy; a south east asian man with brown skin, dark hair and goatee"
