@@ -1,28 +1,43 @@
+import IconJS from "../assets/skills/javascript.webp";
+import IconReact from "../assets/skills/reactjs.webp";
+import IconHTML from "../assets/skills/html.webp";
+import IconCSS from "../assets/skills/css3.webp";
+import iconTailwind from "../assets/skills/tailwind.webp";
+import iconPhp from "../assets/skills/php.webp";
+import iconMySQL from "../assets/skills/mysql.webp";
+import IconDrupal from "../assets/skills/drupal.webp";
+import IconVSCode from "../assets/skills/vscode.webp";
+import IconGit from "../assets/skills/git.webp";
+import IconDocker from "../assets/skills/docker.webp";
+import IconDrush from "../assets/skills/drush_logo-black.webp";
+import IconComposer from "../assets/skills//Composer.webp";
+import IconDDev from "../assets/skills/ddev-dark.webp";
+
 const SkillsData = [
   {
     name: "JavaScript (ES6)",
     type: "frontend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/javascript.png",
+    icon: IconJS,
   },
   {
     name: "React",
     type: "frontend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/reactjs.png",
+    icon: IconReact,
   },
   {
     name: "HTML5",
     type: "frontend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/html-light.png",
+    icon: IconHTML,
   },
   {
     name: "CSS3",
     type: "frontend",
-    icon: "https://cdn.jsdelivr.net/gh/selfhst/icons/png/css3.png",
+    icon: IconCSS,
   },
   {
     name: "Tailwind",
     type: "frontend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/tailwind.png",
+    icon: iconTailwind,
   },
   {
     name: "Sass",
@@ -37,48 +52,48 @@ const SkillsData = [
   {
     name: "PHP",
     type: "backend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/php.png",
+    icon: iconPhp,
   },
   {
     name: "MySQL",
     type: "backend",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/mysql.png",
+    icon: iconMySQL,
   },
   {
     name: "Drupal",
     type: "other",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/drupal.png",
+    icon: IconDrupal,
   },
 
   {
     name: "VS Code",
     type: "tools",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/vscode.png",
+    icon: IconVSCode,
   },
   {
     name: "GIT",
     type: "tools",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/git.png",
+    icon: IconGit,
   },
   {
     name: "Docker",
     type: "tools",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/docker.png",
+    icon: IconDocker,
   },
   {
     name: "Drush",
     type: "tools",
-    icon: "https://www.drush.org/13.x/drush_logo-black.png",
+    icon: IconDrush,
   },
   {
     name: "Composer",
     type: "tools",
-    icon: "https://icon.icepanel.io/Technology/png-shadow-512/Composer.png",
+    icon: IconComposer,
   },
   {
     name: "DDEV",
     type: "tools",
-    icon: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/ddev-dark.png",
+    icon: IconDDev,
   },
 ];
 
