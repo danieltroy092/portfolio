@@ -24,6 +24,9 @@
 
 @import "tailwindcss";
 
+@plugin "tailwindcss-motion";
+@plugin "tailwindcss-intersect";
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 768px; /* 768 */

@@ -1,6 +1,5 @@
 import { ButtonLink } from "@components/Button-link";
 import myCV from "@assets/cv.pdf";
-import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -18,7 +17,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const controlNav = () => {
-      if (window.pageYOffset > 700) {
+      if (window.pageYOffset > 600) {
         setShowToggle(true);
       } else {
         setShowToggle(false);
@@ -50,7 +49,7 @@ export const Navbar = () => {
         <a href="/" className="outline-none">
           <img
             src={"logo.webp"}
-            className="size-[40px]"
+            className="size-[40px] motion-preset-slide-down motion-duration-2000 hover:motion-rotate-loop-[1turn]/reset motion-ease-linear"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
             fetchpriority="high"
           ></img>
@@ -63,7 +62,7 @@ export const Navbar = () => {
           <ol className="nav-list flex items-center gap-1">
             {navLinks.map((link, i) => (
               <li
-                className="nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs"
+                className={`nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs motion-preset-slide-down motion-duration-2000 motion-delay-${i + 1}00`}
                 key={i}
               >
                 <a
@@ -76,7 +75,7 @@ export const Navbar = () => {
             ))}
           </ol>
           <ButtonLink
-            className="font-semibold"
+            className="font-semibold nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs motion-preset-slide-down motion-duration-2000 motion-delay-600"
             href={myCV}
             size="sm"
             target="_blank"
@@ -87,7 +86,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none`}
+          className={`toggle relative flex p-1 text-foreground cursor-pointer w-8 h-8 z-50 block ${showToggle ? "" : "lg:hidden"} focus-visible:bg-highlight outline-none motion-preset-slide-left motion-duration-2000`}
           onClick={updateMenu}
           aria-label="toggle button for menu"
         >

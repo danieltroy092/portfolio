@@ -72,15 +72,15 @@ export const Contact = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span
             id="contact"
-            className="text-secondary-foreground font-mono tracking-tight"
+            className="text-secondary-foreground font-mono tracking-tight intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300"
           >
             05. What's Next?
           </span>
-          <h2 className="font-calibre-bold text-white mt-4 text-5xl">
+          <h2 className="font-calibre-bold text-white mt-4 text-5xl intersect:motion-preset-slide-up motion-duration-1000 motion-delay-500">
             Get In Touch
           </h2>
 
-          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty">
+          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty intersect:motion-preset-slide-up motion-duration-1000 motion-delay-700">
             Have a project in mind? I'd love to hear about it. Drop me a message
             and let's discuss how we can work together.
           </p>
@@ -88,7 +88,7 @@ export const Contact = () => {
 
         <div className="max-w-lg mx-auto">
           <div className="glass p-8 rounded-3xl border border-primary/40 glow-border">
-            <div className="glass rounded-3xl p-8 border border-primary/10">
+            <div className="glass rounded-3xl p-8 border border-primary/10 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300">
               {" "}
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
@@ -104,7 +104,7 @@ export const Contact = () => {
             </div>
 
             <form className="form space-y-6 mt-8" onSubmit={handleSubmit}>
-              <div className="form-group">
+              <div className="form-group intersect:motion-preset-slide-up motion-duration-1000">
                 <label htmlFor="name" className="block text-xs font-mono mb-2">
                   Name
                 </label>
@@ -121,7 +121,7 @@ export const Contact = () => {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group intersect:motion-preset-slide-up motion-duration-1000">
                 <label htmlFor="email" className="block font-mono text-xs mb-2">
                   Email
                 </label>
@@ -138,7 +138,7 @@ export const Contact = () => {
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group intersect:motion-preset-slide-up motion-duration-1000">
                 <label
                   htmlFor="message"
                   className="block text-xs font-mono font-medium mb-2"
@@ -154,12 +154,12 @@ export const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-highlight focus:ring-1 focus:ring-highlight outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-highlight focus:ring-1 focus:ring-highlight outline-none transition-all resize-none intersect:motion-preset-slide-up motion-duration-1000"
                 />
               </div>
 
               <Button
-                className="block m-auto button bordered focus:bg-highlight"
+                className="block m-auto button bordered focus:bg-highlight intersect:motion-preset-slide-up motion-duration-1000"
                 type="submit"
                 size="lg"
                 disabled={isLoading}

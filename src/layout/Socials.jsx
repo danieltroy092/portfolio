@@ -35,7 +35,7 @@ export const Socials = () => {
           <li className="social-item size-[20px]" key={i}>
             <a
               href={social.url}
-              className="social-link block outline-none m-auto"
+              className="social-link block outline-none m-auto hover:motion-translate-y-loop-25"
               target="_blank"
               aria-label={`An external link leading to ${social.name} website.`}
             >

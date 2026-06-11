@@ -10,21 +10,25 @@ import { Experience } from "@sections/Experience";
 import { Projects } from "@sections/Projects";
 import { Contact } from "@sections/Contact";
 
+import ObserverProvider from "./ObserverProvider";
+
 export default function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Navbar />
-      <Email />
-      <Socials />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ObserverProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+        <Email />
+        <Socials />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ObserverProvider>
   );
 }

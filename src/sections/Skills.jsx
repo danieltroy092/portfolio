@@ -108,14 +108,14 @@ const tools = SkillsData.filter(
 export const Skills = () => {
   return (
     <section className="skills-content relative container max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold">
+      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300">
         <a id="skills" className="text-primary font-mono text-lg">
           02.
         </a>{" "}
         <span className="section-title relative">What's in my toolbox</span>
       </h2>
 
-      <div className="skill-group mt-12">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300">
         <h3 className="font-mono text-foreground">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {frontend.map((skill, i) => (
@@ -126,7 +126,7 @@ export const Skills = () => {
               <img
                 src={skill.icon}
                 alt={`logo for ${skill.name}`}
-                className="skill-image w-[72px]"
+                className="skill-image w-[72px] hover:motion-translate-y-loop-25"
               />
               <div className="skill-label" role="tooltip">
                 <p className="text-sm">{skill.name}</p>
@@ -136,7 +136,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300">
         <h3 className="font-mono text-foreground">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {backend.map((skill, i) => (
@@ -147,7 +147,7 @@ export const Skills = () => {
               <img
                 src={skill.icon}
                 alt={`logo for ${skill.name}`}
-                className="skill-image w-[72px]"
+                className="skill-image w-[72px] hover:motion-translate-y-loop-25"
               />
               <div className="skill-label" role="tooltip">
                 <p className="text-sm">{skill.name}</p>
@@ -157,7 +157,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-300">
         <h3 className="font-mono text-foreground">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {tools.map((skill, i) => (
@@ -165,7 +165,7 @@ export const Skills = () => {
               <img
                 src={skill.icon}
                 alt={`logo for ${skill.name}`}
-                className="skill-image w-[72px]"
+                className="skill-image w-[72px] hover:motion-translate-y-loop-25"
               />
               <div className="skill-label" role="tooltip">
                 <p className="text-sm">{skill.name}</p>
