@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const controlNav = () => {
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 700) {
         setShowToggle(true);
       } else {
         setShowToggle(false);
