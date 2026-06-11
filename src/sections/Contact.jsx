@@ -72,21 +72,21 @@ export const Contact = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span
             id="contact"
-            className="text-secondary-foreground font-mono tracking-tight intersect:motion-preset-slide-up intersect:motion-opacity-in motion-duration-2000 motion-delay-400"
+            className="text-secondary-foreground font-mono tracking-tight intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-400"
           >
             05. What's Next?
           </span>
-          <h2 className="font-calibre-bold text-white mt-4 text-5xl intersect:motion-preset-slide-up intersect:motion-opacity-in motion-duration-2000 motion-delay-600">
+          <h2 className="font-calibre-bold text-white mt-4 text-5xl intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-600">
             Get In Touch
           </h2>
 
-          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty intersect:motion-preset-slide-up intersect:motion-opacity-in motion-duration-2000 motion-delay-800">
+          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-800">
             Have a project in mind? I'd love to hear about it. Drop me a message
             and let's discuss how we can work together.
           </p>
         </div>
 
-        <div className="max-w-lg mx-auto intersect:motion-preset-slide-up intersect:motion-opacity-in motion-duration-1000 motion-delay-200">
+        <div className="max-w-lg mx-auto intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-200">
           <div className="glass p-8 rounded-3xl border border-primary/40 glow-border">
             <div className="glass rounded-3xl p-8 border border-primary/10">
               {" "}

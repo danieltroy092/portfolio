@@ -34,7 +34,7 @@ const projectsData = [
 export const Projects = () => {
   return (
     <section className="skills-content relative max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <h2 className="text-2xl font-semibold intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
         <a id="projects" className="text-primary font-mono text-lg">
           04.
         </a>{" "}
@@ -45,7 +45,7 @@ export const Projects = () => {
         {projectsData.map((project, i) => (
           <li className="project-item mt-12" key={i}>
             <article
-              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse intersect:motion-preset-slide-right" : "intersect:motion-preset-slide-left"} intersect:motion-opacity-in motion-duration-1000 motion-delay-500`}
+              className={`project-teaser intersect:motion-opacity-in-0 ${(i + 1) % 2 === 0 ? "reverse intersect:motion-preset-slide-right" : "intersect:motion-preset-slide-left"} motion-duration-1000 motion-delay-500`}
             >
               {" "}
               <a
