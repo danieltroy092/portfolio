@@ -13,14 +13,14 @@ const expData = [
 export const Experience = () => {
   return (
     <section className="about-content container relative max-w-(--wrapper-base) m-auto px-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-right motion-duration-2000">
+      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
         <a id="experience" className="text-primary font-mono text-lg">
           03.
         </a>{" "}
         <span className="section-title relative">Where I've worked</span>
       </h2>
 
-      <div className="mt-6 intersect:motion-preset-slide-right motion-duration-2000">
+      <div className="mt-6 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
         <h3 className="text-xl  font-calibre-bold">
           Front-end Developer{" "}
           <span>
