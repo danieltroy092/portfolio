@@ -54,6 +54,7 @@ export const Navbar = () => {
             src={"logo.webp"}
             className="size-[40px]"
             alt="site logo consisting of letters D, T and O assembled in a shape of a cube"
+            fetchpriority="high"
           ></img>
         </a>
 
