@@ -488,7 +488,7 @@
   .project-link:focus img,
   .project-link:active img,
   .project-link:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   .project-link:focus .project-image::after,
