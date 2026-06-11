@@ -3,6 +3,8 @@ import IconReact from "../assets/skills/reactjs.webp";
 import IconHTML from "../assets/skills/html.webp";
 import IconCSS from "../assets/skills/css3.webp";
 import iconTailwind from "../assets/skills/tailwind.webp";
+import iconSass from "../assets/skills/sass.webp";
+import iconTwig from "../assets/skills/twig.webp";
 import iconPhp from "../assets/skills/php.webp";
 import iconMySQL from "../assets/skills/mysql.webp";
 import IconDrupal from "../assets/skills/drupal.webp";
@@ -42,12 +44,12 @@ const SkillsData = [
   {
     name: "Sass",
     type: "frontend",
-    icon: "https://icon.icepanel.io/Technology/svg/Sass.svg",
+    icon: iconSass,
   },
   {
     name: "Twig",
     type: "frontend",
-    icon: "https://sensiolabs.com/f/42db05ea4984ca23/158x48-twig.webp",
+    icon: iconTwig,
   },
   {
     name: "PHP",
