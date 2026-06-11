@@ -101,7 +101,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="toggle-menu bg-background border border-primary/40 glow-border">
           <div className="container p-6">
-            <ul className="toggle-menu-list flex flex-col gap-8">
+            <ul className="toggle-menu-list flex flex-col gap-8 motion-preset-slide-left motion-duration-1000">
               {navLinks.map((link, idx) => (
                 <li className="toggle-list-item" key={idx}>
                   <a
@@ -118,7 +118,7 @@ export const Navbar = () => {
               ))}
             </ul>
             <ButtonLink
-              className="block mt-10"
+              className="block mt-10 motion-preset-slide-left motion-duration-1000"
               href={myCV}
               size="sm"
               target="_blank"
