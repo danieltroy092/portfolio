@@ -59,10 +59,10 @@ export const Navbar = () => {
         <div
           className={`hidden lg:flex items-center gap-1  ${showToggle ? "lg:hidden" : ""}`}
         >
-          <ol className="nav-list flex items-center gap-1">
+          <ol className="nav-list flex items-center gap-1 motion-preset-slide-down motion-duration-2000">
             {navLinks.map((link, i) => (
               <li
-                className={`nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs motion-preset-slide-down motion-duration-2000 motion-delay-${i + 1}00`}
+                className={`nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs`}
                 key={i}
               >
                 <a
