@@ -75,7 +75,7 @@ export const Navbar = () => {
             ))}
           </ol>
           <ButtonLink
-            className="font-semibold nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs motion-preset-slide-down motion-duration-2000 motion-delay-600"
+            className="font-semibold nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs motion-preset-slide-down motion-duration-2000"
             href={myCV}
             size="sm"
             target="_blank"
