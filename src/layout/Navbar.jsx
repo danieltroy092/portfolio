@@ -59,7 +59,7 @@ export const Navbar = () => {
         <div
           className={`hidden lg:flex items-center gap-1  ${showToggle ? "lg:hidden" : ""}`}
         >
-          <ol className="nav-list flex items-center gap-1 motion-preset-slide-down motion-duration-2000">
+          <ol className="nav-list flex items-center gap-1 motion-preset-slide-down motion-duration-2500">
             {navLinks.map((link, i) => (
               <li
                 className={`nav-list-item list-[decimal-leading-zero] list-inside px-3 py-2 text-xs`}
