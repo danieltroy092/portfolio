@@ -521,7 +521,6 @@
   .social-link:hover svg,
   .social-link:active svg,
   .social-link:focus-visible svg {
-    transform: translateY(-4px);
     fill: var(--color-highlight);
   }
 
