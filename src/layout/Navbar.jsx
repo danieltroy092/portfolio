@@ -15,7 +15,6 @@ export const Navbar = () => {
   const [showToggle, setShowToggle] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-  const [menu_class, setMenuClass] = useState("menu hidden");
 
   useEffect(() => {
     const controlNav = () => {
@@ -36,10 +35,8 @@ export const Navbar = () => {
   const updateMenu = () => {
     if (!isMobileMenuOpen) {
       setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
     } else {
       setBurgerClass("burger-bar");
-      setMenuClass("menu hidden");
     }
 
     setIsMobileMenuOpen(!isMobileMenuOpen);
