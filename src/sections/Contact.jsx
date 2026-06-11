@@ -65,7 +65,7 @@ export const Contact = () => {
     <section className="py-32 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl "></div>
       </div>
 
       <div className="container mx-auto relative px-6 z-10">
@@ -86,9 +86,9 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-lg mx-auto">
+        <div className="max-w-lg mx-auto intersect:motion-preset-slide-right motion-duration-2000 motion-delay-300">
           <div className="glass p-8 rounded-3xl border border-primary/40 glow-border">
-            <div className="glass rounded-3xl p-8 border border-primary/10 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-300">
+            <div className="glass rounded-3xl p-8 border border-primary/10">
               {" "}
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
@@ -104,7 +104,7 @@ export const Contact = () => {
             </div>
 
             <form className="form space-y-6 mt-8" onSubmit={handleSubmit}>
-              <div className="form-group intersect:motion-preset-slide-up motion-duration-2000">
+              <div className="form-group">
                 <label htmlFor="name" className="block text-xs font-mono mb-2">
                   Name
                 </label>
@@ -121,7 +121,7 @@ export const Contact = () => {
                 />
               </div>
 
-              <div className="form-group intersect:motion-preset-slide-up motion-duration-2000">
+              <div className="form-group">
                 <label htmlFor="email" className="block font-mono text-xs mb-2">
                   Email
                 </label>
@@ -138,7 +138,7 @@ export const Contact = () => {
                 />
               </div>
 
-              <div className="form-group intersect:motion-preset-slide-up motion-duration-2000">
+              <div className="form-group">
                 <label
                   htmlFor="message"
                   className="block text-xs font-mono font-medium mb-2"
@@ -154,12 +154,12 @@ export const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-highlight focus:ring-1 focus:ring-highlight outline-none transition-all resize-none intersect:motion-preset-slide-up motion-duration-2000"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-highlight focus:ring-1 focus:ring-highlight outline-none transition-all resize-none"
                 />
               </div>
 
               <Button
-                className="block m-auto button bordered focus:bg-highlight intersect:motion-preset-slide-up motion-duration-2000"
+                className="block m-auto button bordered focus:bg-highlight"
                 type="submit"
                 size="lg"
                 disabled={isLoading}
