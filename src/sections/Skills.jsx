@@ -108,14 +108,14 @@ const tools = SkillsData.filter(
 export const Skills = () => {
   return (
     <section className="skills-content relative container max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
+      <h2 className="text-2xl font-semibold intersect:motion-preset-slide-right intersect:motion-opacity-in motion-duration-1000 motion-delay-500">
         <a id="skills" className="text-primary font-mono text-lg">
           02.
         </a>{" "}
         <span className="section-title relative">What's in my toolbox</span>
       </h2>
 
-      <div className="skill-group mt-12 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-right intersect:motion-opacity-in motion-duration-1000 motion-delay-500">
         <h3 className="font-mono text-foreground">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {frontend.map((skill, i) => (
@@ -136,7 +136,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-right intersect:motion-opacity-in motion-duration-1000 motion-delay-500">
         <h3 className="font-mono text-foreground">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {backend.map((skill, i) => (
@@ -157,7 +157,7 @@ export const Skills = () => {
         </ul>
       </div>
 
-      <div className="skill-group mt-12 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-700">
+      <div className="skill-group mt-12 intersect:motion-preset-slide-right intersect:motion-opacity-in motion-duration-1000 motion-delay-500">
         <h3 className="font-mono text-foreground">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {tools.map((skill, i) => (

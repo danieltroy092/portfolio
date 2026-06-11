@@ -45,7 +45,7 @@ export const Projects = () => {
         {projectsData.map((project, i) => (
           <li className="project-item mt-12" key={i}>
             <article
-              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse intersect:motion-preset-slide-right" : "intersect:motion-preset-slide-left"} motion-duration-1000 motion-delay-700`}
+              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse intersect:motion-preset-slide-right" : "intersect:motion-preset-slide-left"} intersect:motion-opacity-in motion-duration-1000 motion-delay-500`}
             >
               {" "}
               <a
