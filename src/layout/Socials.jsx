@@ -29,7 +29,7 @@ const socialsData = [
 export const Socials = () => {
   return (
     <div className="socials hidden min-[1536px]:block fixed bottom-0 left-8 z-10 right-auto">
-      <ul className="socials-list flex items-center flex-col gap-5 vertical-accent">
+      <ul className="socials-list flex items-center flex-col gap-5 vertical-accent motion-preset-slide-up motion-duration-2000">
         {" "}
         {socialsData.map((social, i) => (
           <li className="social-item size-[20px]" key={i}>
