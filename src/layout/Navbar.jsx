@@ -44,7 +44,7 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 py-4 z-50 max-sm:bg-background/75`}
+      className={`fixed top-0 left-0 right-0 py-4 z-50 max-md:bg-background/75`}
     >
       <nav className="mx-auto px-6 flex justify-between">
         <a href="/" className="outline-none">
