@@ -1,16 +1,16 @@
+import { FadeIn } from "react-fade-in-view";
+
 export const About = () => {
   return (
     <section className="profile-content relative p-6 max-w-(--wrapper-base) m-auto">
-      <h2 className="py-6 text-2xl font-semibold intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn as="h2" direction="up" className="py-6 text-2xl font-semibold">
         <a id="about" className="text-primary font-mono text-lg">
           01.
         </a>{" "}
         <span className="section-title relative">About Me</span>
-      </h2>
+      </FadeIn>
       <div className="profile-text flex flex-col-reverse items-center gap-10 container sm:flex-row sm:items-start">
-        <div className="sm:basis-[50%] intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
-          <p></p>
-
+        <FadeIn as="div" direction="up" className="sm:basis-[50%]">
           <p className="mt-4 text-pretty">
             Hello! I'm Troy from Newport, Wales. My passion for web development
             started in my early teenage years when I began tinkering with{" "}
@@ -53,15 +53,16 @@ export const About = () => {
             aesthetically pleasing, accessible and robust technical solutions
             for the world wide web.
           </p>
-        </div>
-        <div className="relative sm:basis-[50%] intersect:motion-opacity-in-0 intersect:motion-preset-slide-left motion-duration-1000 motion-delay-500">
+        </FadeIn>
+
+        <FadeIn as="div" direction="up" className="relative sm:basis-[50%]">
           <span
             role="img"
             className="profile-image block relative size-[200px] sm:size-[280px]  rounded-sm brightness-80"
             aria-label="a portrait image of Troy; a south east asian man with brown skin, dark hair and goatee"
           ></span>
           <span className="profile-image--accent absolute inset-[0] z-[-2] size-[200px] sm:size-[280px] border-3 border-solid border-(--color-primary) rounded-sm"></span>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

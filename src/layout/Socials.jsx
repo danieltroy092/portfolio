@@ -3,6 +3,8 @@ import SvgInsta from "../assets/socials/instagram.svg?react";
 import SvgBattle from "../assets/socials/battle.svg?react";
 import SvgLinkedin from "../assets/socials/linkedin.svg?react";
 
+import { FadeIn } from "react-fade-in-view";
+
 const socialsData = [
   {
     name: "github",
@@ -29,8 +31,11 @@ const socialsData = [
 export const Socials = () => {
   return (
     <div className="socials hidden min-[1536px]:block fixed bottom-0 left-8 z-10 right-auto">
-      <ul className="socials-list flex items-center flex-col gap-5 vertical-accent motion-preset-slide-up motion-duration-2000">
-        {" "}
+      <FadeIn
+        as="ul"
+        direction="up"
+        className="socials-list flex items-center flex-col gap-5 vertical-accent"
+      >
         {socialsData.map((social, i) => (
           <li className="social-item size-[20px]" key={i}>
             <a
@@ -43,7 +48,7 @@ export const Socials = () => {
             </a>
           </li>
         ))}
-      </ul>
+      </FadeIn>
     </div>
   );
 };

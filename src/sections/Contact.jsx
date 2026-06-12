@@ -3,6 +3,8 @@ import { Button } from "@components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+import { FadeIn } from "react-fade-in-view";
+
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -70,23 +72,46 @@ export const Contact = () => {
 
       <div className="container mx-auto relative px-6 z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span
+          <FadeIn
             id="contact"
-            className="text-secondary-foreground font-mono tracking-tight intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-400"
+            as="span"
+            direction="up"
+            duration={2000}
+            delay={600}
+            className="text-secondary-foreground font-mono tracking-tight"
           >
             05. What's Next?
-          </span>
-          <h2 className="font-calibre-bold text-white mt-4 text-5xl intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-600">
-            Get In Touch
-          </h2>
+          </FadeIn>
 
-          <p className="text-primary lg:w-1/2 mt-4 m-auto text-pretty intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-2000 motion-delay-800">
+          <FadeIn
+            as="h2"
+            direction="up"
+            duration={2000}
+            delay={800}
+            className="font-calibre-bold text-white mt-4 text-5xl"
+          >
+            Get In Touch
+          </FadeIn>
+
+          <FadeIn
+            as="p"
+            direction="up"
+            duration={2000}
+            delay={1000}
+            className="text-primary lg:w-1/2 mt-4 m-auto text-pretty"
+          >
             Have a project in mind? I'd love to hear about it. Drop me a message
             and let's discuss how we can work together.
-          </p>
+          </FadeIn>
         </div>
 
-        <div className="max-w-lg mx-auto intersect:motion-opacity-in-0 intersect:motion-preset-slide-up motion-duration-1000 motion-delay-200">
+        <FadeIn
+          as="div"
+          direction="up"
+          duration={2000}
+          delay={1200}
+          className="max-w-lg mx-auto"
+        >
           <div className="glass p-8 rounded-3xl border border-primary/40 glow-border">
             <div className="glass rounded-3xl p-8 border border-primary/10">
               {" "}
@@ -187,7 +212,7 @@ export const Contact = () => {
               )}
             </form>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

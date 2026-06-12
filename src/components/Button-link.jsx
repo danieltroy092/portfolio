@@ -1,3 +1,5 @@
+import { FadeIn } from "react-fade-in-view";
+
 export const ButtonLink = ({
   className = "",
   size = "default",
@@ -16,10 +18,10 @@ export const ButtonLink = ({
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
 
   return (
-    <a className={classes} {...props}>
+    <FadeIn as="a" className={classes} {...props}>
       <span className="relative flex items-center justify-center cursor-pointer">
         {children}
       </span>
-    </a>
+    </FadeIn>
   );
 };

@@ -1,3 +1,5 @@
+import { FadeIn } from "react-fade-in-view";
+
 const projectsData = [
   {
     id: 1,
@@ -34,20 +36,21 @@ const projectsData = [
 export const Projects = () => {
   return (
     <section className="skills-content relative max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn as="h2" direction="up" className="text-2xl font-semibold">
         <a id="projects" className="text-primary font-mono text-lg">
           04.
         </a>{" "}
         <span className="section-title relative">Some things I've built</span>
-      </h2>
+      </FadeIn>
 
       <ul className="project-list">
         {projectsData.map((project, i) => (
           <li className="project-item mt-12" key={i}>
-            <article
-              className={`project-teaser intersect:motion-opacity-in-0 ${(i + 1) % 2 === 0 ? "reverse intersect:motion-preset-slide-right" : "intersect:motion-preset-slide-left"} motion-duration-1000 motion-delay-500`}
+            <FadeIn
+              as="article"
+              direction={(i + 1) % 2 === 0 ? "left" : "right"}
+              className={`project-teaser ${(i + 1) % 2 === 0 ? "reverse" : ""}`}
             >
-              {" "}
               <a
                 className="project-link block grid grid-cols-12 outline-none"
                 href={project.url}
@@ -70,7 +73,7 @@ export const Projects = () => {
                   </p>
                 </div>
               </a>
-            </article>
+            </FadeIn>
           </li>
         ))}
       </ul>

@@ -15,6 +15,8 @@ import IconDrush from "../assets/skills/drush_logo-black.webp";
 import IconComposer from "../assets/skills//Composer.webp";
 import IconDDev from "../assets/skills/ddev-dark.webp";
 
+import { FadeIn } from "react-fade-in-view";
+
 const SkillsData = [
   {
     name: "JavaScript (ES6)",
@@ -108,14 +110,26 @@ const tools = SkillsData.filter(
 export const Skills = () => {
   return (
     <section className="skills-content relative container max-w-(--wrapper-sm) m-auto p-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn
+        as="h2"
+        direction="up"
+        duration={800}
+        delay={500}
+        once={false}
+        className="text-2xl font-semibold"
+      >
         <a id="skills" className="text-primary font-mono text-lg">
           02.
         </a>{" "}
         <span className="section-title relative">What's in my toolbox</span>
-      </h2>
+      </FadeIn>
 
-      <div className="skill-group mt-12 intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn
+        as="div"
+        direction="up"
+        className="skill-group mt-12"
+        once={false}
+      >
         <h3 className="font-mono text-foreground">FRONTEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {frontend.map((skill, i) => (
@@ -134,9 +148,9 @@ export const Skills = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </FadeIn>
 
-      <div className="skill-group mt-12 intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn as="div" direction="up" className="skill-group mt-12">
         <h3 className="font-mono text-foreground">BACKEND</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {backend.map((skill, i) => (
@@ -155,9 +169,9 @@ export const Skills = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </FadeIn>
 
-      <div className="skill-group mt-12 intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn as="div" direction="up" className="skill-group mt-12">
         <h3 className="font-mono text-foreground">TOOLS</h3>
         <ul className="skill-list flex flex-wrap mt-4 gap-12 items-center justify-between sm:justify-start">
           {tools.map((skill, i) => (
@@ -173,7 +187,7 @@ export const Skills = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </section>
   );
 };

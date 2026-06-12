@@ -1,5 +1,5 @@
-import { Button } from "@components/Button";
 import { ButtonLink } from "../components/Button-link";
+import { FadeIn } from "react-fade-in-view";
 
 export const Hero = () => {
   return (
@@ -34,17 +34,42 @@ export const Hero = () => {
       {/** Content */}
       <div className="hero-content relative container m-auto p-6 sm:max-w-[70vw]">
         <h1>
-          <span className="block md:text-lg font-mono motion-preset-slide-down motion-duration-1000">
+          <FadeIn
+            as="span"
+            direction="down"
+            className="block md:text-lg font-mono"
+          >
             Hi, my name is
-          </span>
-          <span className="block text-5xl md:text-6xl mt-4 font-calibre-bold gradient-text motion-preset-slide-down motion-duration-1000 motion-delay-500">
+          </FadeIn>
+
+          <FadeIn
+            as="span"
+            direction="down"
+            duration={2000}
+            delay={400}
+            className="block text-5xl md:text-6xl mt-4 font-calibre-bold gradient-text"
+          >
             Daniel Troy Ong.
-          </span>
-          <span className="block text-5xl md:text-6xl mt-2 font-calibre-bold gradient-text text-balance motion-preset-slide-down motion-duration-1000 motion-delay-800">
+          </FadeIn>
+
+          <FadeIn
+            as="span"
+            direction="down"
+            duration={2000}
+            delay={600}
+            className="block text-5xl md:text-6xl mt-4 font-calibre-bold gradient-text text-balance"
+          >
             I build things for the web.
-          </span>
+          </FadeIn>
         </h1>
-        <div className="flex mt-4 lg:w-1/2 motion-preset-slide-down motion-duration-1000 motion-delay-1100">
+
+        <FadeIn
+          as="div"
+          direction="down"
+          duration={2000}
+          delay={800}
+          className="flex mt-4 lg:w-1/2"
+        >
           <p className="text-lg text-pretty max-w-[500px]">
             I am a front-end developer with 4+ years of experience in creating
             responsive, accessible and pixel-perfect user interfaces utilising{" "}
@@ -57,9 +82,13 @@ export const Hero = () => {
             </a>
             .
           </p>
-        </div>
+        </FadeIn>
+
         <ButtonLink
-          className="inline-block mt-8 py-2 px-6 hover:text-background gradient-button bordered hover:font-semibold focus:font-semibold motion-preset-slide-down motion-duration-1000 motion-delay-1400"
+          direction="down"
+          duration={2000}
+          delay={1000}
+          className="inline-block mt-8 py-2 px-6 hover:text-background gradient-button bordered hover:font-semibold focus:font-semibold"
           href="#contact"
         >
           Get in Touch

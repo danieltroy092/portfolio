@@ -1,3 +1,5 @@
+import { FadeIn } from "react-fade-in-view";
+
 const expData = [
   "Developed custom Drupal themes with priority to responsiveness and accessibility; enhancing user engagement.",
   "Standardised code practices; created reusable code boosting eﬃciency and minimised cost.",
@@ -13,14 +15,14 @@ const expData = [
 export const Experience = () => {
   return (
     <section className="about-content container relative max-w-(--wrapper-base) m-auto px-6 mt-24 sm:mt-48">
-      <h2 className="text-2xl font-semibold intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-2000 motion-delay-700">
+      <FadeIn as="h2" direction="up" className="text-2xl font-semibold">
         <a id="experience" className="text-primary font-mono text-lg">
           03.
         </a>{" "}
         <span className="section-title relative">Where I've worked</span>
-      </h2>
+      </FadeIn>
 
-      <div className="mt-6 intersect:motion-opacity-in-0 intersect:motion-preset-slide-right motion-duration-1000 motion-delay-500">
+      <FadeIn as="div" direction="up" className="mt-6">
         <h3 className="text-xl  font-calibre-bold">
           Front-end Developer{" "}
           <span>
@@ -41,7 +43,7 @@ export const Experience = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </FadeIn>
     </section>
   );
 };
